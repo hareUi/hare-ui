@@ -1,5 +1,5 @@
 import Button from './button'
-import {render} from '@testing-library/vue'
+import { render } from '@testing-library/vue'
 test('should word', () => {
   const { getByRole } = render(Button)
   getByRole('button')
@@ -24,7 +24,7 @@ test('slot should be useful', () => {
 test('prop type should be useful', () => {
   const { getByRole } = render(Button, {
     props: {
-      type:'primary'
+      type: 'primary'
     }
   })
   const button = getByRole('button')

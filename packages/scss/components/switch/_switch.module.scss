@@ -1,0 +1,42 @@
+
+@import "../../base/var.module";
+
+.h-switch {
+  width: 57px;
+  height: 28px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  background-color: #DCDFE6;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  user-select: none;
+  outline: none;
+}
+.h-switch::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.h-switch_uncheck::before {
+  left: 2px;
+  transition: .3s;
+}
+.h-switch_check {
+  background-color: #409EFF;
+  transition: .6s;
+}
+.h-switch_check::before {
+  left: 30px;
+  transition: .3s;
+}

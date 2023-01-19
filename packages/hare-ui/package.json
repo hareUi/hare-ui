@@ -14,7 +14,8 @@
     "@hare-ui/foo": "workspace:^1.0.0",
     "@hare-ui/icon": "workspace:^1.0.0",
     "@hare-ui/menu": "workspace:^1.0.0",
-    "@hare-ui/menu-item": "workspace:^1.0.0"
+    "@hare-ui/menu-item": "workspace:^1.0.0",
+    "@hare-ui/switch": "workspace:^1.0.0"
   },
   "devDependencies": {
     "rimraf": "^4.1.0",
