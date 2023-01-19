@@ -2,4 +2,33 @@
 @import "../../base/var.module";
 
 .h-alert {
+  height: 40px;
+  width: 100%;
+  padding: 2px 3px;
+  display: flex;
+  align-items: center;
+}
+
+.h-alert--success {
+  background-color: #f0f9eb;
+  color: #67c23a;
+}
+
+.h-alert--warning {
+  background-color: #fdf6ec;
+  color: #e6a23c;
+}
+
+.h-alert--info {
+  background-color: #f4f4f5;
+  color: #909399;
+}
+
+.h-alert--error {
+  background-color: #fef0f0;
+  color: #f56c6c;
+}
+
+.h-alert--content {
+  padding: 0 10px;
 }

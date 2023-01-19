@@ -12,8 +12,8 @@ import Alert from '@hare-ui/alert'
 // import component end
 import '../scss/index.scss'
 
-const components = [Foo, Button, Icon, Menu, MenuItem, Form, FormItem, Inpu,
-  Switch,
+const components = [Foo, Button, Icon, Menu, MenuItem, Form, FormItem, Input,
+  Switch,
   Alert
 ] // components
 
