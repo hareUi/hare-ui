@@ -1,0 +1,26 @@
+@import '../../base';
+// 尺寸
+$input-height-s: $comp-size-s;
+$input-height-default: $comp-size-m;
+$input-height-l: $comp-size-xl;
+
+// 圆角
+$input-border-radius: $border-radius-default;
+$input-shape-border-radius-s: calc($input-height-s / 4);
+$input-shape-border-radius-default: calc($input-height-default / 4);
+$input-shape-border-radius-l: calc($input-height-l / 4);
+
+// 动画
+$input-anim-fn: $anim-time-fn-ease-out;
+$input-anim-duration: $anim-duration-moderate;
+
+// 输入框本体与插槽间距
+$input-slot-padding-horizontal: $comp-paddingLR-m;
+
+// disabled输入框颜色
+$input-bg-color-disabled: $gray-color-3;
+
+$input-padding-horizontal: $comp-paddingLR-s;
+$input-border-color: $brand-color;
+$input-border-color-hover: $brand-color-hover;
+

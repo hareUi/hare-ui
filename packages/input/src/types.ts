@@ -1,17 +1,29 @@
-import { ExtractPropTypes } from 'vue'
-
+import { ExtractPropTypes, PropType } from 'vue'
+type sizeEnum = 'small' | 'middle' | 'large'
 export const inputProps = {
   modelValue: {
     type: String,
     default: ''
   },
-  placeholderValue: {
+  placeholder: {
     type: String,
     default: ''
   },
   type: {
     type: String,
     default: 'text'
+  },
+  size: {
+    type: String as PropType<sizeEnum>,
+    default: 'middle'
+  },
+  bordered: {
+    type: Boolean,
+    default: true
+  },
+  disabled: {
+    type: Boolean,
+    default: false
   }
 } as const
 
