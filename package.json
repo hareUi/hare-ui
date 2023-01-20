@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://hare-ui-1-docs-9yoqxlemx-zymonody7.vercel.app/",
   "files": [
     "./lib",
     "package.json",
