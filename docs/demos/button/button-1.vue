@@ -5,6 +5,7 @@
     <h-button type="info">Info</h-button>
     <h-button type="warning">Warning</h-button>
     <h-button type="error">Error</h-button>
+    <h-button type="error" size="small">Error</h-button>
   </div>
 </template>
 
