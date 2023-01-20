@@ -1,5 +1,8 @@
 
 @import "../../base/var.module";
 
-.h-menu-item {
+.h-menu__item {
+  &--active{
+    color: aquamarine;
+  }
 }
