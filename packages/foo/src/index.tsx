@@ -10,7 +10,7 @@ export default defineComponent({
   setup (props, context) {
     console.log(props, context)
     const onBtnClick = () => {
-      console.log('点击按钮测试', props.msg)
+      console.log('点击按钮测试12312', props.msg)
       testLog(props.msg)
     }
     return () => (
