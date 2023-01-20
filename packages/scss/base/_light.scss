@@ -1,22 +1,165 @@
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
+@media(prefers-color-scheme: light){
+  :root {
+    --h-brand-color-1: #f2f3ff;
+    --h-brand-color-2: #d9e1ff;
+    --h-brand-color-3: #b5c7ff;
+    --h-brand-color-4: #8eabff;
+    --h-brand-color-5: #618dff;
+    --h-brand-color-6: #366ef4;
+    --h-brand-color-7: #0052d9;
+    --h-brand-color-8: #003cab;
+    --h-brand-color-9: #002a7c;
+    --h-brand-color-10: #001a57;
+    --h-warning-color-1: #fff1e9;
+    --h-warning-color-2: #ffd9c2;
+    --h-warning-color-3: #ffb98c;
+    --h-warning-color-4: #fa9550;
+    --h-warning-color-5: #e37318;
+    --h-warning-color-6: #be5a00;
+    --h-warning-color-7: #954500;
+    --h-warning-color-8: #713300;
+    --h-warning-color-9: #532300;
+    --h-warning-color-10: #3b1700;
+    --h-error-color-1: #fff0ed;
+    --h-error-color-2: #ffd8d2;
+    --h-error-color-3: #ffb9b0;
+    --h-error-color-4: #ff9285;
+    --h-error-color-5: #f6685d;
+    --h-error-color-6: #d54941;
+    --h-error-color-7: #ad352f;
+    --h-error-color-8: #881f1c;
+    --h-error-color-9: #68070a;
+    --h-error-color-10: #490002;
+    --h-success-color-1: #e3f9e9;
+    --h-success-color-2: #c6f3d7;
+    --h-success-color-3: #92dab2;
+    --h-success-color-4: #56c08d;
+    --h-success-color-5: #2ba471;
+    --h-success-color-6: #008858;
+    --h-success-color-7: #006c45;
+    --h-success-color-8: #005334;
+    --h-success-color-9: #003b23;
+    --h-success-color-10: #002515;
+    --h-gray-color-1: #f3f3f3;
+    --h-gray-color-2: #eee;
+    --h-gray-color-3: #e8e8e8;
+    --h-gray-color-4: #ddd;
+    --h-gray-color-5: #c6c6c6;
+    --h-gray-color-6: #a6a6a6;
+    --h-gray-color-7: #8b8b8b;
+    --h-gray-color-8: #777;
+    --h-gray-color-9: #5e5e5e;
+    --h-gray-color-10: #4b4b4b;
+    --h-gray-color-11: #393939;
+    --h-gray-color-12: #2c2c2c;
+    --h-gray-color-13: #242424;
+    --h-gray-color-14: #181818;
 
-$blue: #0d6efd !default;
-$indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
-$pink: #d63384 !default;
-$red: #dc3545 !default;
-$orange: #fd7e14 !default;
-$yellow: #fadb14 !default;
-$green: #52c41a !default;
-$teal: #20c997 !default;
-$cyan: #17a2b8 !default;
+    // 文字 & 图标 颜色
+    --h-font-white-1: rgba(255, 255, 255, 100%);
+    --h-font-white-2: rgba(255, 255, 255, 55%);
+    --h-font-white-3: rgba(255, 255, 255, 35%);
+    --h-font-white-4: rgba(255, 255, 255, 22%);
+    --h-font-gray-1: rgba(0, 0, 0, 90%);
+    --h-font-gray-2: rgba(0, 0, 0, 60%);
+    --h-font-gray-3: rgba(0, 0, 0, 40%);
+    --h-font-gray-4: rgba(0, 0, 0, 26%);
+
+    // 基础颜色
+    --h-brand-color: var(--h-brand-color-7); // 色彩-品牌-可操作
+    --h-warning-color: var(--h-warning-color-5); // 色彩-功能-警告
+    --h-error-color: var(--h-error-color-6); // 色彩-功能-失败
+    --h-success-color: var(--h-success-color-5); // 色彩-功能-成功
+
+    // 基础颜色的扩展 用于 hover / 聚焦 / 禁用 / 点击 等状态
+    --h-brand-color-hover: var(--h-brand-color-6); // hover态
+    --h-brand-color-focus: var(--h-brand-color-2); // focus态，包括鼠标和键盘
+    --h-brand-color-active: var(--h-brand-color-8); // 点击态
+    --h-brand-color-disabled: var(--h-brand-color-3); // 禁用态
+    --h-brand-color-light: var(--h-brand-color-1); // 浅色的选中态
+
+    // 警告色扩展
+    --h-warning-color-hover: var(--h-warning-color-4);
+    --h-warning-color-focus: var(--h-warning-color-2);
+    --h-warning-color-active: var(--h-warning-color-6);
+    --h-warning-color-disabled: var(--h-warning-color-3);
+    --h-warning-color-light: var(--h-warning-color-1);
+
+    // 失败/错误色扩展
+    --h-error-color-hover: var(--h-error-color-5);
+    --h-error-color-focus: var(--h-error-color-2);
+    --h-error-color-active: var(--h-error-color-7);
+    --h-error-color-disabled: var(--h-error-color-3);
+    --h-error-color-light: var(--h-error-color-1);
+
+    // 成功色扩展
+    --h-success-color-hover: var(--h-success-color-4);
+    --h-success-color-focus: var(--h-success-color-2);
+    --h-success-color-active: var(--h-success-color-6);
+    --h-success-color-disabled: var(--h-success-color-3);
+    --h-success-color-light: var(--h-success-color-1);
+
+    // 遮罩
+    --h-mask-active: rgba(0, 0, 0, 60%); // 遮罩-弹出
+    --h-mask-disabled: rgba(255, 255, 255, 60%); // 遮罩-禁用
+
+    // 背景色
+    --h-bg-color-page: var(--h-gray-color-2); // 色彩 - page
+    --h-bg-color-container: #fff; // 色彩 - 容器
+    --h-bg-color-container-hover: var(--h-gray-color-1); // 色彩 - 容器 - hover
+    --h-bg-color-container-active: var(--h-gray-color-3); // 色彩 - 容器 - active
+    --h-bg-color-container-select: #fff; // 色彩 - 容器 - select
+    --h-bg-color-secondarycontainer: var(--h-gray-color-1); // 色彩 - 次级容器
+    --h-bg-color-secondarycontainer-hover: var(--h-gray-color-2); // 色彩 - 次级容器 - hover
+    --h-bg-color-secondarycontainer-active: var(--h-gray-color-4); // 色彩 - 次级容器 - active
+    --h-bg-color-component: var(--h-gray-color-3); // 色彩 - 组件
+    --h-bg-color-component-hover: var(--h-gray-color-4); // 色彩 - 组件 - hover
+    --h-bg-color-component-active: var(--h-gray-color-6); // 色彩 - 组件 - active
+    --h-bg-color-secondarycomponent: var(--h-gray-color-4); // 色彩 - 次级组件
+    --h-bg-color-secondarycomponent-hover: var(--h-gray-color-5); // 色彩 - 次级组件 - hover
+    --h-bg-color-secondarycomponent-active: var(--h-gray-color-6); // 色彩 - 次级组件 - active
+    --h-bg-color-component-disabled: var(--h-gray-color-2); // 色彩 - 组件 - disabled
+
+    // 特殊组件背景色，目前只用于 button、input 组件多主题场景，浅色主题下固定为白色，深色主题下为 transparent 适配背景颜色
+    --h-bg-color-specialcomponent: #fff;
+
+    // 文本颜色
+    --h-text-color-primary: var(--h-font-gray-1); // 色彩-文字-主要
+    --h-text-color-secondary: var(--h-font-gray-2); // 色彩-文字-次要
+    --h-text-color-placeholder: var(--h-font-gray-3); // 色彩-文字-占位符/说明
+    --h-text-color-disabled: var(--h-font-gray-4); // 色彩-文字-禁用
+    --h-text-color-anti: #fff; // 色彩-文字-反色
+    --h-text-color-brand: var(--h-brand-color-7); // 色彩-文字-品牌
+    --h-text-color-link: var(--h-brand-color-8); // 色彩-文字-链接
+
+    // 分割线
+    --h-border-level-1-color: var(--h-gray-color-3);
+    --h-component-stroke: var(--h-gray-color-3);
+    // 边框
+    --h-border-level-2-color: var(--h-gray-color-4);
+    --h-component-border: var(--h-gray-color-4);
+
+    // 基础/下层 投影 hover 使用的组件包括：表格 /
+    --h-shadow-1: 0 1px 10px rgba(0, 0, 0, 5%), 0 4px 5px rgba(0, 0, 0, 8%), 0 2px 4px -1px rgba(0, 0, 0, 12%);
+    // 中层投影 下拉 使用的组件包括：下拉菜单 / 气泡确认框 / 选择器 /
+    --h-shadow-2: 0 3px 14px 2px rgba(0, 0, 0, 5%), 0 8px 10px 1px rgba(0, 0, 0, 6%), 0 5px 5px -3px rgba(0, 0, 0, 10%);
+    // 上层投影（警示/弹窗）使用的组件包括：全局提示 / 消息通知
+    --h-shadow-3: 0 6px 30px 5px rgba(0, 0, 0, 5%), 0 16px 24px 2px rgba(0, 0, 0, 4%), 0 8px 10px -5px rgba(0, 0, 0, 8%);
+
+    // 内投影 用于弹窗类组件（气泡确认框 / 全局提示 / 消息通知）的内描边
+    --h-shadow-inset-top: inset 0 .5px 0 #dcdcdc;
+    --h-shadow-inset-right: inset .5px 0 0 #dcdcdc;
+    --h-shadow-inset-bottom: inset 0 -.5px 0 #dcdcdc;
+    --h-shadow-inset-left: inset -.5px 0 0 #dcdcdc;
+
+    // table 特定阴影
+    --h-table-shadow-color: rgba(0, 0, 0, 8%);
+
+    // 滚动条颜色
+    --h-scrollbar-color: rgba(0, 0, 0, 10%);
+    // 滚动条悬浮颜色（ hover ）
+    --h-scrollbar-hover-color: rgba(0, 0, 0, 30%);
+    // 滚动条轨道颜色，不能是带透明度，否则纵向滚动时，横向滚动条会穿透
+    --h-scroll-track-color: #fff;
+  }
+}

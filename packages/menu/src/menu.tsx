@@ -20,7 +20,7 @@ export default defineComponent({
         menuContext.onSelect(index)
       }
     }
-    provide('MENU_CONTEXT',{
+    provide('MENU_CONTEXT', {
       index: menuContext.index,
       onSelect: handleClick
     })
