@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3866984 */
-  src: url('./iconfont/iconfont.woff2?t=1674022814766') format('woff2'),
-      url('./iconfont/iconfont.woff?t=1674022814766') format('woff'),
-      url('./iconfont/iconfont.ttf?t=1674022814766') format('truetype');
+  src: url('./iconfont/iconfont.woff2') format('woff2'),
+      url('./iconfont/iconfont.woff') format('woff'),
+      url('./iconfont/iconfont.ttf') format('truetype');
 }
 
 .icon {
@@ -13,15 +13,63 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-vue:before {
-  content: "\e69a";
+.icon-eye-fill:before {
+  content: "\e869";
 }
 
-.icon-home:before {
-  content: "\e677";
+.icon-reload:before {
+  content: "\e788";
 }
 
 .icon-user:before {
-  content: "\e68a";
+  content: "\e7ae";
+}
+
+.icon-file:before {
+  content: "\e7bb";
+}
+
+.icon-home:before {
+  content: "\e7c6";
+}
+
+.icon-like:before {
+  content: "\e7c8";
+}
+
+.icon-unlike:before {
+  content: "\e7c9";
+}
+
+.icon-unlock:before {
+  content: "\e7ca";
+}
+
+.icon-lock:before {
+  content: "\e7cb";
+}
+
+.icon-man:before {
+  content: "\e7e2";
+}
+
+.icon-check:before {
+  content: "\e7fc";
+}
+
+.icon-close:before {
+  content: "\e7fd";
+}
+
+.icon-woman:before {
+  content: "\e8f1";
+}
+
+.icon-eye-close:before {
+  content: "\e8ff";
+}
+
+.icon-vue:before {
+  content: "\e69a";
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <h-input placeholder="base input"></h-input>
+  <h-input placeholder="disabled input" disabled></h-input>
 </template>
 
 <script lang="ts" setup>

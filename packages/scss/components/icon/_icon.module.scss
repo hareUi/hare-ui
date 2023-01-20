@@ -1,6 +1,14 @@
 // @import './iconfont.scss';
-@import "../../base/var.module";
+@import "./var";
 
-.h-icon{
-  
+.icon{
+  &:hover {
+    &::before {
+      color: $icon-color-hover;
+      transition: color $anim-time-fn-ease-out $anim-duration-slow;
+    }
+  }
+}
+.h-icon:hover{
+  color: $icon-color-hover;
 }
