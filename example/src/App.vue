@@ -21,6 +21,7 @@
     <h-menu-item index="b">123</h-menu-item>
     <h-menu-item index="c">123</h-menu-item>
   </h-menu>
+  <h-alert>123</h-alert>
 </template>
 
 <script lang='ts' setup>
