@@ -2,6 +2,7 @@
 @import "../../base/var.module";
 
 .h-menu__item {
+  list-style: none;
   &--active{
     color: aquamarine;
   }

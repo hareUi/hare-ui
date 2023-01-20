@@ -11,6 +11,11 @@
       <h-button type='primary'>登录</h-button>
     </h-form-item>
   </h-form>
+  <h-menu :defaultIndex="'a'">
+    <h-menu-item index="a">123</h-menu-item>
+    <h-menu-item index="b">123</h-menu-item>
+    <h-menu-item index="c">123</h-menu-item>
+  </h-menu>
 </template>
 
 <script lang='ts' setup>

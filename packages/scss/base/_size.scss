@@ -1,0 +1,68 @@
+// size/margin/padding相关 token
+:root {
+  --h-size-1: 2px;
+  --h-size-2: 4px;
+  --h-size-3: 6px;
+  --h-size-4: 8px;
+  --h-size-5: 12px;
+  --h-size-6: 16px;
+  --h-size-7: 20px;
+  --h-size-8: 24px;
+  --h-size-9: 28px;
+  --h-size-10: 32px;
+  --h-size-11: 36px;
+  --h-size-12: 40px;
+  --h-size-13: 48px;
+  --h-size-14: 56px;
+  --h-size-15: 64px;
+  --h-size-16: 72px;
+
+  //全局 component 组件尺寸高度相关 token
+  --h-comp-size-xxxs: var(--h-size-6);
+  --h-comp-size-xxs: var(--h-size-7);
+  --h-comp-size-xs: var(--h-size-8);
+  --h-comp-size-s: var(--h-size-9);
+  --h-comp-size-m: var(--h-size-10);
+  --h-comp-size-l: var(--h-size-11);
+  --h-comp-size-xl: var(--h-size-12);
+  --h-comp-size-xxl: var(--h-size-13);
+  --h-comp-size-xxxl: var(--h-size-14);
+  --h-comp-size-xxxxl: var(--h-size-15);
+  --h-comp-size-xxxxxl: var(--h-size-16);
+
+  //全局 popup 弹出层整体边距 token
+  --h-pop-padding-s: var(--h-size-2);
+  --h-pop-padding-m: var(--h-size-3);
+  --h-pop-padding-l: var(--h-size-4);
+  --h-pop-padding-xl: var(--h-size-5);
+  --h-pop-padding-xxl: var(--h-size-6);
+
+  //全局 component 组件左右边距 token
+  --h-comp-paddingLR-xxs: var(--h-size-1);
+  --h-comp-paddingLR-xs: var(--h-size-2);
+  --h-comp-paddingLR-s: var(--h-size-4);
+  --h-comp-paddingLR-m: var(--h-size-5);
+  --h-comp-paddingLR-l: var(--h-size-6);
+  --h-comp-paddingLR-xl: var(--h-size-8);
+  --h-comp-paddingLR-xxl: var(--h-size-10);
+
+  //全局 component 组件上下边距 token
+  --h-comp-paddingTB-xxs: var(--h-size-1);
+  --h-comp-paddingTB-xs: var(--h-size-2);
+  --h-comp-paddingTB-s: var(--h-size-4);
+  --h-comp-paddingTB-m: var(--h-size-5);
+  --h-comp-paddingTB-l: var(--h-size-6);
+  --h-comp-paddingTB-xl: var(--h-size-8);
+  --h-comp-paddingTB-xxl: var(--h-size-10);
+
+  //全局 component 组件间距 token
+  --h-comp-margin-xxs: var(--h-size-1);
+  --h-comp-margin-xs: var(--h-size-2);
+  --h-comp-margin-s: var(--h-size-4);
+  --h-comp-margin-m: var(--h-size-5);
+  --h-comp-margin-l: var(--h-size-6);
+  --h-comp-margin-xl: var(--h-size-7);
+  --h-comp-margin-xxl: var(--h-size-8);
+  --h-comp-margin-xxxl: var(--h-size-10);
+  --h-comp-margin-xxxxl: var(--h-size-12);
+}
