@@ -1,13 +1,30 @@
 
 @import "../../base/var.module";
 
+// alert主体
+
 .h-alert {
-  height: 40px;
+  height: max-content;
   width: 100%;
   padding: 2px 3px;
   display: flex;
   align-items: center;
+  opacity: 1;
+  transition: opacity .3s;
 }
+
+// alert主题消失
+.h-alert--opacity {
+  opacity: 0;
+}
+
+// alert居中文字
+
+.h-alert--center {
+  justify-content: center;
+}
+
+// alert类型
 
 .h-alert--success {
   background-color: #f0f9eb;
@@ -29,6 +46,73 @@
   color: #f56c6c;
 }
 
-.h-alert--content {
+// alert内容
+
+.h-alert--content { // 基础内容
   padding: 0 10px;
+  font-size: 16px;
+}
+
+.h-alert--description { // 含有描述性文字的icon与内容排版
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.h-alert--description i {
+  font-size: 24px;
+}
+
+.h-alert--description div { // 含有描述性文字的标题内容排版
+  display: flex;
+  flex-direction: column;
+}
+
+.h-alert--description div span { // 描述性文字字体大小
+  font-size: 10px;
+}
+
+// alert关闭图标
+
+.h-alert--turnoff {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+}
+
+// 字体图标
+
+@font-face {
+  font-family: "iconfont"; /* Project id 3868121 */
+  src: url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.woff2?t=1674200937877') format('woff2'),
+  url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.woff?t=1674200937877') format('woff'),
+  url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.ttf?t=1674200937877') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0 4px;
+}
+
+.icon-turnoff:before {
+  content: "\e723";
+}
+
+.icon-error:before {
+  content: "\e600";
+}
+
+.icon-info:before {
+  content: "\e618";
+}
+
+.icon-success:before {
+  content: "\e8ad";
+}
+
+.icon-warning:before {
+  content: "\e637";
 }
