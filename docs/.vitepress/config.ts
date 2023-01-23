@@ -33,6 +33,7 @@ export default defineConfig({
   lang: 'cn-ZH',
   base: '/',
   lastUpdated: true,
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
   themeConfig: {
     logo: '/logo.png',
     siteTitle: 'hare-ui',
@@ -42,10 +43,6 @@ export default defineConfig({
     sidebar
   },
   markdown: {
-    theme: {
-      light: 'vitesse-light',
-      dark: 'vitesse-dark'
-    },
     lineNumbers: true,
     config(md) {
       md.use(componentPreview)

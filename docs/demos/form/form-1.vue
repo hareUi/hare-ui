@@ -1,25 +1,30 @@
 <template>
-  <h-form style='width: 50%' :model='model' :rules='rules' layout='vertical' labelSize='sm' labelAlign='center'
-    @submit='onSubmit' ref='loginForm'>
-    <h-form-item label='用户名' field='username'>
-      <h-input v-model='model.username' type='text'>
+  <h-form
+    style="width: 50%"
+    :model="model"
+    :rules="rules"
+    layout="vertical"
+    labelSize="sm"
+    labelAlign="center"
+    @submit="onSubmit"
+    ref="loginForm"
+  >
+    <h-form-item label="用户名" field="username">
+      <h-input v-model="model.username" type="text">
         <template #prefix>
           <h-icon name="user"></h-icon>
         </template>
       </h-input>
     </h-form-item>
-    <h-form-item label='密码' field='password'>
-      <h-input v-model='model.password' type='text'>
+    <h-form-item label="密码" field="password">
+      <h-input v-model="model.password" type="text" show-password>
         <template #prefix>
           <h-icon name="unlock"></h-icon>
-        </template>
-        <template #suffix>
-          <h-icon name="vue"></h-icon>
         </template>
       </h-input>
     </h-form-item>
     <h-form-item>
-      <h-button type='primary'>登录</h-button>
+      <h-button type="primary">登录</h-button>
     </h-form-item>
   </h-form>
 </template>
@@ -49,6 +54,4 @@ const onSubmit = () => {
 }
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

@@ -24,7 +24,7 @@ export const convertToLine = (str: string): string => {
 export const convertToUpCamelName = (str: string): string => {
   let ret = ''
   const list = str.split('-')
-  list.forEach((item) => {
+  list.forEach(item => {
     ret += convertFirstUpper(item)
   })
   return convertFirstUpper(ret)

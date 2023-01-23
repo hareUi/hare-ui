@@ -24,13 +24,12 @@
 
 ### Attributes 属性
 
-| 参数     | 说明 | 类型    | 可选值                     | 默认值        |
-|--------|--| ------- | -------------------------- | ------------- |
-| type   | 主题类型 | string  | success/warning/info/error | success       |
-| title  | 提示标题 | string  | -                          | Title |
-| center | 文字是否居中 | boolean | -                          | false         |
-| icon   | 是否显示图标 | boolean | -                          | false         |
-| close  | 警告是否可关闭 | boolean | -                          | false         |
-| close-text  | 使用自定义文字代替close图标 | string | -                          | -         |
-| description  | 为警告添加描述性信息 | string | -                          | -         |
-
+| 参数        | 说明                          | 类型    | 可选值                     | 默认值  |
+| ----------- | ----------------------------- | ------- | -------------------------- | ------- |
+| type        | 主题类型                      | string  | success/warning/info/error | success |
+| title       | 提示标题                      | string  | -                          | Title   |
+| center      | 文字是否居中                  | boolean | -                          | false   |
+| icon        | 是否显示图标                  | boolean | -                          | false   |
+| close       | 警告是否可关闭                | boolean | -                          | false   |
+| close-text  | 使用自定义文字代替 close 图标 | string  | -                          | -       |
+| description | 为警告添加描述性信息          | string  | -                          | -       |

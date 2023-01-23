@@ -25,7 +25,7 @@ export const initComponent = (componentInfo: ComponentInfo) =>
 
     // 2. 初始化 package.json
     execCmd(`cd ${componentInfo.fullPath} && pnpm init`)
-      .then((r) => {
+      .then(r => {
         // 3. 修改 package.json
         updatePackageJson(componentInfo)
 
@@ -50,7 +50,7 @@ export const initComponent = (componentInfo: ComponentInfo) =>
 
         return resolve(componentInfo)
       })
-      .catch((e) => {
+      .catch(e => {
         return reject(e)
       })
   })

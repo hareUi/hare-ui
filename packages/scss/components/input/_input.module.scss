@@ -1,8 +1,8 @@
-@import "./var";
+@import './var';
 
 .h-input {
   // 无边框组件
-  &-noborder{
+  &-noborder {
     border: 1px solid transparent;
   }
   &__wrapper {
@@ -14,10 +14,11 @@
     flex-wrap: nowrap;
     height: $input-height-default;
     border-radius: $input-shape-border-radius-default;
-    border: 1px solid $input-border-color;
+    border: 1px solid $gray-color-6;
     transition: border $anim-time-fn-ease-out $anim-duration-moderate;
     &.hover,
-    &:hover{
+    &:hover,
+    &:focus-within {
       border: 1px solid $input-border-color-hover;
     }
     // disabled
@@ -25,22 +26,6 @@
       background-color: $input-bg-color-disabled;
       cursor: not-allowed;
       border: 1px solid transparent;
-      &:hover{
-        border: 1px solid transparent;
-        cursor: not-allowed;
-        pointer-events: unset;
-      }
-    }
-  }
-  &__input{
-    border: 0;
-    width: 100%;
-    height: 100%;
-    &-disabled {
-      background-color: $input-bg-color-disabled;
-      cursor: not-allowed;
-      border: 1px solid transparent;
-  
       &:hover {
         border: 1px solid transparent;
         cursor: not-allowed;
@@ -48,17 +33,33 @@
       }
     }
   }
-  &__prefix,&__suffix{
-    width: 30px;
+  &__input {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    &-disabled {
+      background-color: $input-bg-color-disabled;
+      cursor: not-allowed;
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid transparent;
+        cursor: not-allowed;
+        pointer-events: unset;
+      }
+    }
+  }
+  &__prefix,
+  &__suffix {
+    width: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: $input-slot-padding-horizontal;
+    // padding: $input-slot-padding-horizontal;
   }
 
-
-  &-size{
-    &-small{
+  &-size {
+    &-small {
       height: $input-height-s;
     }
     &-middle {

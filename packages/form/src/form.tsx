@@ -14,7 +14,7 @@ export default defineComponent({
      * @param layout 横向布局和纵向布局
      * @param labelSize 标签大小
      * @param labelAlign 标签对齐方式
-    */
+     */
     // label属性
     const labelData = computed(() => ({
       layout: props.layout,

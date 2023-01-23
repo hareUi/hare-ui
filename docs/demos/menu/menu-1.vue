@@ -8,11 +8,10 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>
 
 <style scoped lang="scss">
-.vp-doc li+li {
+.vp-doc li + li {
   margin-top: 0;
 }
 </style>

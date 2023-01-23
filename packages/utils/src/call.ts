@@ -7,7 +7,7 @@ function call<A extends any[]>(
   ...args: A
 ): void {
   if (Array.isArray(fun)) {
-    fun.forEach((item) => (call as any)(item, ...args))
+    fun.forEach(item => (call as any)(item, ...args))
   } else {
     fun(...args)
   }

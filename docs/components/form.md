@@ -2,8 +2,9 @@
 
 ## 基本使用
 
-<preview path="../demos/form/form-1.vue" title="基本使用" description=" "></preview>
+#### 切换密码显示的 bug:由于&&运算符的特性,导致图标无法更换
 
+<preview path="../demos/form/form-1.vue" title="基本使用" description=" "></preview>
 
 ## 组件 API
 

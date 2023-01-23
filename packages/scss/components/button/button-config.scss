@@ -3,66 +3,144 @@
 
 // 按钮类型的配置
 $type: (
-  primary: (background-color: $btn-color-primary ),
-  info: (background-color: $btn-color-success ),
-  default: (color:$btn-color-primary,
-  background-color: $btn-color-white-bg,
-    border-color: $btn-color-primary ),
-  text: (padding: 0,
-    color: $btn-color-primary ),
-  error: (background-color: $btn-color-error ),
-  warning: (background-color: $btn-color-warning ),
+  primary: (
+    background-color: $btn-color-primary
+  ),
+  info: (
+    background-color: $btn-color-success
+  ),
+  default: (
+    color: $btn-color-primary,
+    background-color: $btn-color-white-bg,
+    border-color: $btn-color-primary
+  ),
+  text: (
+    padding: 0,
+    color: $btn-color-primary
+  ),
+  error: (
+    background-color: $btn-color-error
+  ),
+  warning: (
+    background-color: $btn-color-warning
+  )
 );
 
 // 伪类的配置
 $pseudo: (
-  primary: (hover: (background-color: $btn-color-primary-hover ),
-    focus: (background-color: $btn-color-primary-active ),
-    active: (background-color: $btn-color-primary-active ),
-    disabled: (color: $btn-color-ghost-disabled,
+  primary: (
+    hover: (
+      background-color: $btn-color-primary-hover
+    ),
+    focus: (
+      background-color: $btn-color-primary-active
+    ),
+    active: (
+      background-color: $btn-color-primary-active
+    ),
+    disabled: (
+      color: $btn-color-ghost-disabled,
       background-color: $btn-color-success-disabled,
-      border: none)),
-  info: (hover: (background-color: $btn-color-success-hover ),
-    focus: (background-color: $btn-color-success-active ),
-    active: (background-color: $btn-color-success-active ),
-    disabled: (color: $btn-color-ghost-disabled,
+      border: none
+    )
+  ),
+  info: (
+    hover: (
+      background-color: $btn-color-success-hover
+    ),
+    focus: (
+      background-color: $btn-color-success-active
+    ),
+    active: (
+      background-color: $btn-color-success-active
+    ),
+    disabled: (
+      color: $btn-color-ghost-disabled,
       background-color: $btn-color-success-disabled,
-      border: none)),
-  default: (hover: (border-color: $btn-color-white-bg-hover,
-      color: $btn-color-primary ),
-    focus: (border-color: $btn-color-white-bg-active,
-      color: $btn-color-primary ),
-    active: (border-color: $btn-color-white-bg,
-      color: $btn-color-primary ),
-    disabled: (color: $btn-color-white-bg,
+      border: none
+    )
+  ),
+  default: (
+    hover: (
+      border-color: $btn-color-white-bg-hover,
+      color: $btn-color-primary
+    ),
+    focus: (
+      border-color: $btn-color-white-bg-active,
+      color: $btn-color-primary
+    ),
+    active: (
+      border-color: $btn-color-white-bg,
+      color: $btn-color-primary
+    ),
+    disabled: (
+      color: $btn-color-white-bg,
       background-color: $btn-color-white-bg,
-      border: 1px solid $btn-color-white-bg )),
-  text: (hover: (color: $btn-color-text-bg ),
-    focus: (color: $btn-color-text-bg ),
-    active: (color: $btn-color-text-bg ),
-    disabled: (color: $btn-color-text-bg )),
-  error: (hover: (background-color: $btn-color-error-hover ),
-    focus: (background-color: $btn-color-error-active ),
-    active: (background-color: $btn-color-error-active ),
-    disabled: (color: $btn-color-error,
+      border: 1px solid $btn-color-white-bg
+    )
+  ),
+  text: (
+    hover: (
+      color: $btn-color-text-bg
+    ),
+    focus: (
+      color: $btn-color-text-bg
+    ),
+    active: (
+      color: $btn-color-text-bg
+    ),
+    disabled: (
+      color: $btn-color-text-bg
+    )
+  ),
+  error: (
+    hover: (
+      background-color: $btn-color-error-hover
+    ),
+    focus: (
+      background-color: $btn-color-error-active
+    ),
+    active: (
+      background-color: $btn-color-error-active
+    ),
+    disabled: (
+      color: $btn-color-error,
       background-color: $btn-color-error-disabled,
-      border: none)),
-  warning: (hover: (background-color: $btn-color-warning-hover ),
-    focus: (background-color: $btn-color-warning-active ),
-    active: (background-color: $btn-color-warning-active ),
-    disabled: (color: $btn-color-warning,
+      border: none
+    )
+  ),
+  warning: (
+    hover: (
+      background-color: $btn-color-warning-hover
+    ),
+    focus: (
+      background-color: $btn-color-warning-active
+    ),
+    active: (
+      background-color: $btn-color-warning-active
+    ),
+    disabled: (
+      color: $btn-color-warning,
       background-color: $btn-color-warning-disabled,
-      border: none)),
+      border: none
+    )
+  )
 );
 
 // 按钮尺寸
 $size: (
-  small: (height: 24px,
+  small: (
+    height: 24px,
     padding: 0 16px,
-    font-size: $btn-font-s ),
-  medium: (height: 32px,
-    font-size: $btn-font-default ),
-  large: (height: 40px,
+    font-size: $btn-font-s
+  ),
+  medium: (
+    height: 32px,
+    font-size: $btn-font-default
+  ),
+  large: (
+    height: 40px,
     padding: 0 24px,
-    font-size: $btn-font-l )
+    font-size: $btn-font-l
+  )
 );

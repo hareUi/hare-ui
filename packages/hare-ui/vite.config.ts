@@ -19,7 +19,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, './index.ts'),
       name: 'hare-ui',
-      fileName: (format) => `hare-ui.${format}.js`
+      fileName: format => `hare-ui.${format}.js`
     },
     outDir: path.resolve(__dirname, '../../lib'),
     rollupOptions: {

@@ -1,5 +1,4 @@
-
-@import "../../base/var.module";
+@import '../../base/var.module';
 
 // alert主体
 
@@ -10,7 +9,7 @@
   display: flex;
   align-items: center;
   opacity: 1;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 // alert主题消失
@@ -48,12 +47,14 @@
 
 // alert内容
 
-.h-alert--content { // 基础内容
+.h-alert--content {
+  // 基础内容
   padding: 0 10px;
   font-size: 16px;
 }
 
-.h-alert--description { // 含有描述性文字的icon与内容排版
+.h-alert--description {
+  // 含有描述性文字的icon与内容排版
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,12 +64,14 @@
   font-size: 24px;
 }
 
-.h-alert--description div { // 含有描述性文字的标题内容排版
+.h-alert--description div {
+  // 含有描述性文字的标题内容排版
   display: flex;
   flex-direction: column;
 }
 
-.h-alert--description div span { // 描述性文字字体大小
+.h-alert--description div span {
+  // 描述性文字字体大小
   font-size: 10px;
 }
 
@@ -83,14 +86,17 @@
 // 字体图标
 
 @font-face {
-  font-family: "iconfont"; /* Project id 3868121 */
-  src: url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.woff2?t=1674200937877') format('woff2'),
-  url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.woff?t=1674200937877') format('woff'),
-  url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.ttf?t=1674200937877') format('truetype');
+  font-family: 'iconfont'; /* Project id 3868121 */
+  src: url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.woff2?t=1674200937877')
+      format('woff2'),
+    url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.woff?t=1674200937877')
+      format('woff'),
+    url('//at.alicdn.com/t/c/font_3868121_eclws8rwj6p.ttf?t=1674200937877')
+      format('truetype');
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
+  font-family: 'iconfont' !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -98,21 +104,21 @@
 }
 
 .icon-turnoff:before {
-  content: "\e723";
+  content: '\e723';
 }
 
 .icon-error:before {
-  content: "\e600";
+  content: '\e600';
 }
 
 .icon-info:before {
-  content: "\e618";
+  content: '\e618';
 }
 
 .icon-success:before {
-  content: "\e8ad";
+  content: '\e8ad';
 }
 
 .icon-warning:before {
-  content: "\e637";
+  content: '\e637';
 }

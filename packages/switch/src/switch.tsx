@@ -6,12 +6,10 @@ const NAME = 'h-switch'
 export default defineComponent({
   name: NAME,
   props: switchProps,
-  setup (props, { slots }) {
+  setup(props, { slots }) {
     return () => (
-      <div class={ NAME }>
-        <div>
-          h-switch
-        </div>
+      <div class={NAME}>
+        <div>h-switch</div>
       </div>
     )
   }

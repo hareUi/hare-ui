@@ -1,9 +1,8 @@
-@import "../../base/var.module";
+@import '../../base/var.module';
 
 .h-menu {
   list-style: none;
-  border-bottom: 
-  &--horizontal{
+  border-bottom: &--horizontal {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
