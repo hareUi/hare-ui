@@ -1,5 +1,5 @@
 <template>
-  <h-input placeholder="please input password" show-password></h-input>
+  <h-input placeholder="please input password" clearable></h-input>
 </template>
 
 <script lang="ts" setup></script>

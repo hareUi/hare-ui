@@ -1,6 +1,10 @@
 import { ExtractPropTypes, PropType } from 'vue'
 type sizeEnum = 'small' | 'middle' | 'large'
 export const inputProps = {
+  defaultValue: {
+    type: String,
+    default: ''
+  },
   modelValue: {
     type: String,
     default: ''
@@ -22,6 +26,22 @@ export const inputProps = {
     default: true
   },
   disabled: {
+    type: Boolean,
+    default: false
+  },
+  prefixIcon: {
+    type: String,
+    default: null
+  },
+  suffixIcon: {
+    type: String,
+    default: null
+  },
+  showPassword: {
+    type: Boolean,
+    default: false
+  },
+  clearable: {
     type: Boolean,
     default: false
   }

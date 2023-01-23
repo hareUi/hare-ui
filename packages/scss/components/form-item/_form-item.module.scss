@@ -1,23 +1,24 @@
-
-@import "../../base/var.module";
+@import '../../base/var.module';
 
 .h-form__item {
   // layout
-  &--horizontal{
+  &--horizontal {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
-  &--vertical{
+  &--vertical {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
   }
-  &--error{
+  &__msg {
     margin-bottom: 0;
+    color: red;
+    font-size: 8px;
   }
 }
-.h-form__label{
+.h-form__label {
   align-self: flex-start;
   &--vertical {
     padding-bottom: 8px;
