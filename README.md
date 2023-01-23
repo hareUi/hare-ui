@@ -31,4 +31,17 @@
 https://juejin.cn/post/6844903672162304013
 
 ### 写scss使用变量,之后可以切换白天/黑暗模式。
-### 写scss时`伪类`或者`子类`前面加*&*可以简写很多代码,结合bem规范,写起来很香。
+### 写scss`伪类`或者`子类`时,前面加`&`可以简写很多代码,结合bem规范,写起来就会很清晰。如下，结构清晰，层次分明。
+```scss
+.article {
+    max-width: 1200px;
+    &__body {
+        padding: 20px;
+    }
+    &__button {
+        padding: 5px 8px;
+        &--primary {background: blue;}
+        &--success {background: green;}
+    }
+}
+```
