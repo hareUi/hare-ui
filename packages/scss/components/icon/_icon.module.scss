@@ -1,7 +1,7 @@
 // @import './iconfont.scss';
-@import "./var";
+@import './var';
 
-.icon{
+.icon {
   &:hover {
     &::before {
       color: $icon-color-hover;
@@ -9,6 +9,6 @@
     }
   }
 }
-.h-icon:hover{
+.h-icon:hover {
   color: $icon-color-hover;
 }

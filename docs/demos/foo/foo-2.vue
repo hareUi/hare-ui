@@ -1,6 +1,4 @@
-<template>
-  <h-foo :msg="msg"></h-foo>123
-</template>
+<template><h-foo :msg="msg"></h-foo>123</template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'

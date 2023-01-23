@@ -7,7 +7,7 @@ const NAME = 'h-button'
 export default defineComponent({
   name: NAME,
   props: buttonProps,
-  setup (props:ButtonProps, { slots }) {
+  setup(props: ButtonProps, { slots }) {
     const { type, size, disabled, block } = toRefs(props)
     const classes = computed(() => [
       NAME,
@@ -30,10 +30,11 @@ export default defineComponent({
           disabled={disabled.value}
           onClick={handleClick}
           // type={attrType}
-          class={classes.value}>
-        {defaultSlot }
-      </button>)
-
+          class={classes.value}
+        >
+          {defaultSlot}
+        </button>
+      )
     }
   }
 })

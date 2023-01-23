@@ -6,7 +6,7 @@ const NAME = 'h-alert'
 export default defineComponent({
   name: NAME,
   props: alertProps,
-  setup (props, { slots }) {
+  setup(props, { slots }) {
     // console.log(props)
     // 将类型参数与CSS类对应
     const classMap = {
@@ -29,14 +29,28 @@ export default defineComponent({
       }, 300)
     }
     return () => (
-      <div v-show={showAlert.value} class={[NAME, className, props.center ? 'h-alert--center' : '', transition.value ? 'h-alert--opacity' : '']}>
+      <div
+        v-show={showAlert.value}
+        class={[
+          NAME,
+          className,
+          props.center ? 'h-alert--center' : '',
+          transition.value ? 'h-alert--opacity' : ''
+        ]}
+      >
         {/* 没有描述的内容 */}
         <span v-show={!props.description} class={'h-alert--content'}>
-          <em v-show={props.icon} class={['iconfont', `icon-${props.type}`]}></em>
-          { props.title }
+          <em
+            v-show={props.icon}
+            class={['iconfont', `icon-${props.type}`]}
+          ></em>
+          {props.title}
         </span>
         {/* 有描述的内容 */}
-        <div v-show={props.description} class={['h-alert--content', 'h-alert--description']}>
+        <div
+          v-show={props.description}
+          class={['h-alert--content', 'h-alert--description']}
+        >
           <i v-show={props.icon} class={['iconfont', `icon-${props.type}`]}></i>
           <div>
             <em>{props.title}</em>
@@ -44,9 +58,19 @@ export default defineComponent({
           </div>
         </div>
         {/* 关闭图标 */}
-        <i v-show={ props.close && !props.closeText} class={['iconfont', 'icon-turnoff', 'h-alert--turnoff']} onClick={closeAlert}></i>
+        <i
+          v-show={props.close && !props.closeText}
+          class={['iconfont', 'icon-turnoff', 'h-alert--turnoff']}
+          onClick={closeAlert}
+        ></i>
         {/* 自定义关闭文字 */}
-        <i v-show={ props.closeText } class={['h-alert--turnoff']} onClick={ closeAlert }>{ props.closeText }</i>
+        <i
+          v-show={props.closeText}
+          class={['h-alert--turnoff']}
+          onClick={closeAlert}
+        >
+          {props.closeText}
+        </i>
       </div>
     )
   }

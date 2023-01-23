@@ -1,9 +1,8 @@
-
-@import "../../base/var.module";
+@import '../../base/var.module';
 
 .h-menu__item {
   list-style: none;
-  &--active{
+  &--active {
     color: aquamarine;
   }
 }

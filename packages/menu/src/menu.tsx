@@ -26,12 +26,12 @@ export default defineComponent({
     })
     const classes = computed(() => [
       NAME,
-      `${ mode.value === 'horizontal' ? ` ${ NAME }--horizontal ` : ` ${ NAME }--vertical ` }`
+      `${
+        mode.value === 'horizontal'
+          ? ` ${NAME}--horizontal `
+          : ` ${NAME}--vertical `
+      }`
     ])
-    return () => (
-      <ul class={classes.value}>
-        {slots?.default()}
-      </ul>
-    )
+    return () => <ul class={classes.value}>{slots?.default()}</ul>
   }
 })

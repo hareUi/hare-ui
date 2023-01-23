@@ -5,42 +5,49 @@ $h-font-size-sm: var(--h-font-size-md, 12px); //当组件size为''时使用此�
 $h-font-size-md: var(--h-font-size-md, 14px); //当组件size为''时使用此字号大小
 $h-font-size-lg: var(--h-font-size-md, 16px); //当组件size为''时使用此字号大小
 $h-animation-duration-slow: var(--h-animation-duration-slow, 300ms);
-$h-animation-ease-in-out-smooth: var(--h-animation-ease-in-out-smooth,
-    cubic-bezier(0.645, 0.045, 0.355, 1));
+$h-animation-ease-in-out-smooth: var(
+  --h-animation-ease-in-out-smooth,
+  cubic-bezier(0.645, 0.045, 0.355, 1)
+);
 $h-light-text: var(--h-light-text, #ffffff); // 有色深色背景下字体颜色（固定）
 
+$h-primary: var(--h-primary, #63e2b7ff); // 主要按钮，同品牌色
+$h-primary-disabled: var(--h-primary-disabled, #7fe7c44f); // 主要按钮，同品牌色
+$h-primary-hover: var(--h-primary-hover, #7fe7c4ff); // 主要按钮悬停
+$h-primary-active: var(--h-primary-active, #5acea7ff); // 主要按钮激活
 
-$h-primary: var(--h-primary, #63E2B7FF); // 主要按钮，同品牌色
-$h-primary-disabled: var(--h-primary-disabled, #7FE7C44F); // 主要按钮，同品牌色
-$h-primary-hover: var(--h-primary-hover, #7FE7C4FF); // 主要按钮悬停
-$h-primary-active: var(--h-primary-active, #5ACEA7FF); // 主要按钮激活
+$h-info: var(--h-info, #70c0e8ff); // 主要按钮，同品牌色
+$h-info-disabled: var(--h-info-disabled, #70c0e8ff); // 主要按钮，同品牌色
+$h-info-hover: var(--h-info-hover, #8acbecff); // 主要按钮悬停
+$h-info-active: var(--h-info-active, #66afd3ff); // 主要按钮激活
 
-$h-info: var(--h-info, #70C0E8FF); // 主要按钮，同品牌色
-$h-info-disabled: var(--h-info-disabled, #70C0E8FF); // 主要按钮，同品牌色
-$h-info-hover: var(--h-info-hover, #8ACBECFF); // 主要按钮悬停
-$h-info-active: var(--h-info-active, #66AFD3FF); // 主要按钮激活
+$h-error: var(--h-primary, #e88080ff); // 主要按钮，同品牌色
+$h-error-disabled: var(--h-primary-disabled, #e98b8b6b); // 主要按钮，同品牌色
+$h-error-hover: var(--h-primary-hover, #e98b8bff); // 主要按钮悬停
+$h-error-active: var(--h-primary-active, #e57272ff); // 主要按钮激活
 
-$h-error: var(--h-primary, #E88080FF); // 主要按钮，同品牌色
-$h-error-disabled: var(--h-primary-disabled, #E98B8B6B); // 主要按钮，同品牌色
-$h-error-hover: var(--h-primary-hover, #E98B8BFF); // 主要按钮悬停
-$h-error-active: var(--h-primary-active, #E57272FF); // 主要按钮激活
-
-$h-warning: var(--h-warning, #F2C97DFF); // 主要按钮，同品牌色
-$h-warning-disabled: var(--h-warning-disabled, #F2C97DFF); // 主要按钮，同品牌色
-$h-warning-hover: var(--h-warning-hover, #F5D599FF); // 主要按钮悬停
-$h-warning-active: var(--h-warning-active, #E6C260FF); // 主要按钮激活
+$h-warning: var(--h-warning, #f2c97dff); // 主要按钮，同品牌色
+$h-warning-disabled: var(--h-warning-disabled, #f2c97dff); // 主要按钮，同品牌色
+$h-warning-hover: var(--h-warning-hover, #f5d599ff); // 主要按钮悬停
+$h-warning-active: var(--h-warning-active, #e6c260ff); // 主要按钮激活
 $h-text: var(--h-text, #252b3a); // 正文文本
 $h-disabled-text: var(--h-disabled-text, rgba(255, 255, 255, 0.24)); // 正文文本
 $h-disabled-bg: var(--h-disabled-bg, #c2cce5); // 正文文本
 $h-disabled-line: var(--h-disabled-line, #a9b0c0); // 正文文本
-$h-block: var(--h-block,
-    #ffffff); // 大面积的不可折叠区块的背景色（例如顶部导航背景色）
+$h-block: var(
+  --h-block,
+  #ffffff
+); // 大面积的不可折叠区块的背景色（例如顶部导航背景色）
 $h-line: var(--h-line, #adb0b8); // 边框分割线，仅用于边框
-$h-form-control-line-active: var(--h-form-control-line-active,
-        #5ACEA7FF); // 表单控件边框激活色，用于获得焦点
-$h-brand-active: var(--h-brand-active, #5ACEA7FF); // 品牌色激活色（加深）
-$h-brand-active-focus: var(--h-brand-active-focus,
-    #344899); // 品牌色焦点色（重度加深）
+$h-form-control-line-active: var(
+  --h-form-control-line-active,
+  #5acea7ff
+); // 表单控件边框激活色，用于获得焦点
+$h-brand-active: var(--h-brand-active, #5acea7ff); // 品牌色激活色（加深）
+$h-brand-active-focus: var(
+  --h-brand-active-focus,
+  #344899
+); // 品牌色焦点色（重度加深）
 
 $line-height-base: 1.5715;
 /******** spacing *******/

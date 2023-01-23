@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 3866984 */
+  font-family: 'iconfont'; /* Project id 3866984 */
   src: url('./iconfont/iconfont.woff2') format('woff2'),
-      url('./iconfont/iconfont.woff') format('woff'),
-      url('./iconfont/iconfont.ttf') format('truetype');
+    url('./iconfont/iconfont.woff') format('woff'),
+    url('./iconfont/iconfont.ttf') format('truetype');
 }
 
 .icon {
-  font-family: "iconfont" !important;
+  font-family: 'iconfont' !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -14,62 +14,61 @@
 }
 
 .icon-eye-fill:before {
-  content: "\e869";
+  content: '\e869';
 }
 
 .icon-reload:before {
-  content: "\e788";
+  content: '\e788';
 }
 
 .icon-user:before {
-  content: "\e7ae";
+  content: '\e7ae';
 }
 
 .icon-file:before {
-  content: "\e7bb";
+  content: '\e7bb';
 }
 
 .icon-home:before {
-  content: "\e7c6";
+  content: '\e7c6';
 }
 
 .icon-like:before {
-  content: "\e7c8";
+  content: '\e7c8';
 }
 
 .icon-unlike:before {
-  content: "\e7c9";
+  content: '\e7c9';
 }
 
 .icon-unlock:before {
-  content: "\e7ca";
+  content: '\e7ca';
 }
 
 .icon-lock:before {
-  content: "\e7cb";
+  content: '\e7cb';
 }
 
 .icon-man:before {
-  content: "\e7e2";
+  content: '\e7e2';
 }
 
 .icon-check:before {
-  content: "\e7fc";
+  content: '\e7fc';
 }
 
 .icon-close:before {
-  content: "\e7fd";
+  content: '\e7fd';
 }
 
 .icon-woman:before {
-  content: "\e8f1";
+  content: '\e8f1';
 }
 
 .icon-eye-close:before {
-  content: "\e8ff";
+  content: '\e8ff';
 }
 
 .icon-vue:before {
-  content: "\e69a";
+  content: '\e69a';
 }
-

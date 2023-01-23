@@ -16,6 +16,11 @@
       "import": "./lib/demo-ui-lib.es.js"
     }
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-zh"
+    }
+  },
   "scripts": {
     "dev:dev": "pnpm run -C example dev:dev",
     "dev:uat": "pnpm run -C example dev:uat",
@@ -30,10 +35,11 @@
     "docs:preview": "pnpm run -C docs serve",
     "gen:component": "pnpm run -C cli gen",
     "start:verdaccio": "pnpm verdaccio",
-    "lint": "eslint \"{cli,packages,docs,example}/**/*.{js,ts,vue,jsx,tsx}\" --fix",
+    "lint": "lint-staged",
     "test": "vitest",
     "prepare": "husky install",
-    "prettier": "prettier --write --loglevel log /**/*.{js,json,tsx,css,less,scss,vue,html,md,ts}"
+    "prettier": "prettier --write --loglevel log */**/*.{js,json,tsx,css,less,scss,vue,html,md,ts}",
+    "commit": "git add . && pnpm lint && git cz"
   },
   "keywords": [],
   "author": "",
@@ -61,6 +67,9 @@
     "@typescript-eslint/parser": "^5.48.2",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog-zh": "^0.0.2",
     "eslint": "^8.32.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
@@ -82,7 +91,6 @@
   "lint-staged": {
     "packages/**/*.{js,jsx,ts,tsx,json}": [
       "prettier --write",
-      "eslint",
       "git add"
     ]
   }

@@ -6,12 +6,10 @@ const NAME = 'h-col'
 export default defineComponent({
   name: NAME,
   props: colProps,
-  setup (props, { slots }) {
+  setup(props, { slots }) {
     return () => (
-      <div class={ NAME }>
-        <div>
-          h-col
-        </div>
+      <div class={NAME}>
+        <div>h-col</div>
       </div>
     )
   }

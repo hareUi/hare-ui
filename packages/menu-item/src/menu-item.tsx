@@ -6,7 +6,7 @@ const CLASSNAME = 'h-menu__item'
 export default defineComponent({
   name: NAME,
   props: menuItemProps,
-  setup (props, { slots }) {
+  setup(props, { slots }) {
     const { index, disabled } = toRefs(props)
     const menuContext = inject('MENU_CONTEXT') as MenuContext
     const handleClick = () => {
