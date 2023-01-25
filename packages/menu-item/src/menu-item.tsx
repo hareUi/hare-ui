@@ -12,8 +12,6 @@ export default defineComponent({
     const handleClick = () => {
       if (menuContext.onSelect && !disabled.value) {
         menuContext.onSelect(index.value)
-        console.log('context.index', menuContext.index)
-        console.log('index.value', index.value)
       }
     }
     const classes = computed(() => [
