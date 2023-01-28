@@ -38,11 +38,9 @@ export default defineComponent({
         ></use>
       </svg>
     )
-    const icon = props.component
-      ? svgIcon
-      : /http|https/.test(props.name)
-      ? imgIcon
-      : fontIcon
+    const icon = props.component ? svgIcon : /http|https/.test(props.name)
+    // ? imgIcon
+    // : fontIcon
     return () => {
       return icon
     }

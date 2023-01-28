@@ -40,7 +40,7 @@ export const initComponent = (componentInfo: ComponentInfo) =>
         // 6. 创建 src/xxx.vue 或s src/xxx.tsx
         createSrcIndex(componentInfo)
 
-        // 7. 创建 src/types.ts 文件
+        // 7. 创建 src/avatar-types.ts 文件
         createSrcTypes(componentInfo)
 
         // 8. 创建 index.ts

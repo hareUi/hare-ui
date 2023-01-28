@@ -8,4 +8,6 @@ export const components = [
   { text: 'FormItem 表单项', link: '/components/form-item' },
   { text: 'Input 输入框', link: '/components/input' },
   { text: 'Col 列', link: '/components/col' }
+,
+  { text: 'Avatar 头像', link: '/components/avatar' },
 ] // end

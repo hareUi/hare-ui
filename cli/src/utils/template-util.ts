@@ -56,7 +56,7 @@ export default defineComponent({
 }
 
 /**
- * types.ts 文件模板
+ * avatar-types.ts 文件模板
  */
 export const typesTemplate = (
   lowCamelName: string,

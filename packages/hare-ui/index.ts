@@ -9,6 +9,7 @@ import FormItem from '@hare-ui/form-item'
 import Input from '@hare-ui/input'
 import Switch from '@hare-ui/switch'
 import Alert from '@hare-ui/alert'
+import Avatar from '@hare-ui/avatar'
 // import component end
 import '../scss/index.scss'
 
@@ -22,7 +23,8 @@ const components = [
   FormItem,
   Input,
   Switch,
-  Alert
+  Alert,
+  Avatar
 ] // components
 
 // 全局动态添加组件
