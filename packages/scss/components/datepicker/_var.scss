@@ -1,0 +1,11 @@
+@import '../../base/variables';
+$dp-wrapper-border-color: $gray-color-4;
+$dp-wrapper-border-color-hover: $brand-color-active;
+
+$dp-wrapper-height-sm: 20px;
+$dp-wrapper-height-md: 30px;
+$dp-wrapper-height-lg: 40px;
+
+$dp-main-z: $z-index-dialog;
+
+$transition: cubic-bezier(0.19, 1, 0.22, 1);

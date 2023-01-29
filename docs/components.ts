@@ -7,5 +7,7 @@ export const components = [
   { text: 'Form 表单', link: '/components/form' },
   { text: 'FormItem 表单项', link: '/components/form-item' },
   { text: 'Input 输入框', link: '/components/input' },
-  { text: 'Col 列', link: '/components/col' }
+  { text: 'Col 列', link: '/components/col' },
+  { text: 'SubMenu 下拉菜单', link: '/components/sub-menu' },
+  { text: 'Datepicker 日期选择框', link: '/components/datepicker' }
 ] // end

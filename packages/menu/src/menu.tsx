@@ -32,7 +32,7 @@ export default defineComponent({
     ])
     return () => (
       <ul class={classes.value} data-testid="menu">
-        {slots?.default()}
+        {slots.default ? slots.default() : null}
       </ul>
     )
   }

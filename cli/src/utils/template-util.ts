@@ -153,9 +153,14 @@ export const demoTemplate = (lineNameWithPrefix: string) => {
 }
 export const testTemplate = (componentInfo: ComponentInfo) => {
   return `import ${componentInfo.upCamelName} from './${componentInfo.lineName}'
-import {render} from '@testing-library/vue'
-test('1 + 1 should be 2', () => {
-  expect(1+1).toBe(2)
+import { render } from '@testing-library/vue'
+describe('${componentInfo.lineName}组件初始化----', () => {
+  it('${componentInfo.lineName}组件应该存在', () => {
+    expect(${componentInfo.upCamelName}).toBeTruthy()
+  })
+  it('${componentInfo.lineName}组件应该可以被渲染', () => {
+    const wrapper = render(${componentInfo.upCamelName})
+  })
 })
   `
 }

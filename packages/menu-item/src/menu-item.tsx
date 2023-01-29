@@ -21,7 +21,7 @@ export default defineComponent({
     ])
     return () => (
       <li class={classes.value} onClick={handleClick}>
-        {slots?.default()}
+        {slots.default ? slots.default() : null}
       </li>
     )
   }

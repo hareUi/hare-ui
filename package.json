@@ -1,8 +1,11 @@
 {
   "name": "hare-ui",
+  "private": false,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/hare-ui.umd.js",
+  "types": "./lib/hare-ui/index.d.ts",
+  "module": "./lib/hare-ui.es.js",
   "type": "module",
   "homepage": "https://hare-ui-1-docs-9yoqxlemx-zymonody7.vercel.app/",
   "files": [
@@ -12,8 +15,8 @@
   ],
   "exports": {
     ".": {
-      "require": "./lib/demo-ui-lib.umd.js",
-      "import": "./lib/demo-ui-lib.es.js"
+      "require": "./lib/hare-ui.umd.js",
+      "import": "./lib/hare-ui.es.js"
     }
   },
   "config": {
@@ -35,6 +38,7 @@
     "docs:preview": "pnpm run -C docs serve",
     "gen:component": "pnpm run -C cli gen",
     "start:verdaccio": "pnpm verdaccio",
+    "pub:local": "pnpm publish --registry http://150.158.88.84:4873/ --no-git-checks",
     "lint": "lint-staged",
     "test": "vitest",
     "prepare": "husky install",

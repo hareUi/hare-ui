@@ -15,7 +15,7 @@ const testVerticalProps: MenuProps = {
   onSelect: vitest.fn(),
   mode: 'horizontal'
 }
-const testMenu = props => {
+const testMenu = (props: MenuProps) => {
   return (
     <h-menu>
       <h-menu-item index={'a'}>active</h-menu-item>
