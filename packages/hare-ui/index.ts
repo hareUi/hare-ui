@@ -9,6 +9,8 @@ import FormItem from '@hare-ui/form-item'
 import Input from '@hare-ui/input'
 import Switch from '@hare-ui/switch'
 import Alert from '@hare-ui/alert'
+import SubMenu from '@hare-ui/sub-menu'
+import Datepicker from '@hare-ui/datepicker'
 // import component end
 import '../scss/index.scss'
 
@@ -22,7 +24,9 @@ const components = [
   FormItem,
   Input,
   Switch,
-  Alert
+  Alert,
+  SubMenu,
+  Datepicker
 ] // components
 
 // 全局动态添加组件

@@ -1,0 +1,15 @@
+
+@import "../../base/var.module";
+@import './mixin.scss';
+@import './var';
+
+.h-datepicker {
+  @include commonWrapper($dp-wrapper-height-md);
+
+  &--lg {
+    @include commonWrapper($dp-wrapper-height-lg);
+  }
+  &--sm {
+    @include commonWrapper($dp-wrapper-height-sm);
+  }
+}

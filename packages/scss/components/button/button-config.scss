@@ -62,11 +62,11 @@ $pseudo: (
   ),
   default: (
     hover: (
-      border-color: $btn-color-white-bg-hover,
+      border-color: $btn-color-primary,
       color: $btn-color-primary
     ),
     focus: (
-      border-color: $btn-color-white-bg-active,
+      border-color: $btn-color-primary,
       color: $btn-color-primary
     ),
     active: (

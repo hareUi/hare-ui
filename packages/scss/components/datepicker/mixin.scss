@@ -1,0 +1,108 @@
+@import './var';
+@mixin commonWrapper($height){
+  position: relative;
+  border-radius: 5px;
+  height: $height;
+  &__input{
+    padding: 0 5px;
+    border: 1px solid $dp-wrapper-border-color;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.2s;
+    &:hover {
+      border: 1px solid $dp-wrapper-border-color-hover;
+    }
+    &:focus {
+      border: 1px solid $dp-wrapper-border-color-hover;
+      box-shadow: $dp-wrapper-border-color-hover 0px 7px 10px 0px;
+      box-shadow: $dp-wrapper-border-color-hover 0px 1px 4px;
+    }
+  }
+  &__main{
+    @include commonMain($height);
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  
+    &--active {
+      height: 265px;
+      border: 1px solid $dp-wrapper-border-color-hover;
+    }
+    .calendar {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: 3px;
+
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        padding: 0 10px;
+        color: #000;
+        font-size: 14px;
+        :hover{
+          color: $dp-wrapper-border-color-hover;
+        }
+      }
+
+      .row {
+        display: flex;
+        padding: 5px;
+        justify-content: space-between;
+
+        &.title {
+          color: $dp-wrapper-border-color-hover;
+          font-size: 12px;
+        }
+
+        &.content {
+          justify-content: flex-start;
+          padding-top: 0;
+          flex-wrap: wrap;
+
+          &>span {
+            transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.2s;
+            border-radius: 3px;
+            font-size: 8px;
+            padding-bottom: 2px;
+            text-align: center;
+            width: calc(100% / 7);
+            &.grey{
+              color: #999;
+            }
+            &:hover {
+              color: #fff;
+              background-color: $dp-wrapper-border-color-hover;
+            }
+          }
+        }
+        &.footer{
+          border-top: 1px solid #ddd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $dp-wrapper-border-color-hover;
+          & > span{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin commonMain($top){
+  border-radius: 5px;
+  position: absolute;
+  top: calc($top + 5px);
+  left: 0;
+  background-color: aqua;
+  width: 240px;
+  overflow-y: auto;
+  height: 0;
+  z-index: $dp-main-z;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}

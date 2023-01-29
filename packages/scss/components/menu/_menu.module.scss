@@ -1,10 +1,16 @@
-@import '../../base/var.module';
+@import './var';
 
 .h-menu {
   list-style: none;
-  border-bottom: &--horizontal {
-    display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: flex;
+  box-shadow: $menu-box-shadow;
+  padding-left: 0;
+  gap: $menu-gap;
+  &--horizontal {
     margin-bottom: 30px;
+  }
+  &--vertical{
+    flex-direction: column;
   }
 }

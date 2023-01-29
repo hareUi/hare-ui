@@ -13,8 +13,6 @@ export default defineComponent({
     }
     const handleClick = (index: string) => {
       menuContext.index.value = index
-      console.log('index', index)
-      console.log('menuc', menuContext.index.value)
       // console.log(typeof index)
       if (menuContext.onSelect) {
         menuContext.onSelect(index)
@@ -32,6 +30,10 @@ export default defineComponent({
           : ` ${NAME}--vertical `
       }`
     ])
-    return () => <ul class={classes.value}>{slots?.default()}</ul>
+    return () => (
+      <ul class={classes.value} data-testid="menu">
+        {slots.default ? slots.default() : null}
+      </ul>
+    )
   }
 })

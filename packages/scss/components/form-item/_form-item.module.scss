@@ -1,6 +1,7 @@
 @import '../../base/var.module';
 
 .h-form__item {
+  min-height: 100px;
   // layout
   &--horizontal {
     display: flex;
@@ -10,7 +11,7 @@
   &--vertical {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
   &__msg {
     margin-bottom: 0;
