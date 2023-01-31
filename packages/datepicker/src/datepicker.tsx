@@ -25,17 +25,17 @@ export default defineComponent({
       pickedDate.value = e.value
     }
     provide('Date', dpContext)
-    dateMode
-    weekMode
     const renderMode = () => {
+      let Mode
       switch (props.mode) {
         case 'date':
-          return <dateMode></dateMode>
+          Mode = <dateMode></dateMode>
+          break
         case 'week':
-          return <weekMode></weekMode>
         default:
-          return <weekMode></weekMode>
+          Mode = <weekMode></weekMode>
       }
+      return Mode
     }
     // 控制下拉日历是否显示
     const mainIsActive = ref(false)
