@@ -9,9 +9,7 @@ export default defineComponent({
   setup (props, { slots }) {
     return () => (
       <div class={ NAME }>
-        <div>
-          h-switch
-        </div>
+        <input class={'h-switch'} type="checkbox"></input>
       </div>
     )
   }
