@@ -9,5 +9,7 @@ export const components = [
   { text: 'Input 输入框', link: '/components/input' },
   { text: 'Col 列', link: '/components/col' },
   { text: 'SubMenu 下拉菜单', link: '/components/sub-menu' },
-  { text: 'Datepicker 日期选择框', link: '/components/datepicker' }
+  { text: 'Datepicker 日期选择框', link: '/components/datepicker' },
+  { text: 'Alert 警告', link: '/components/alert' },
+  { text: 'Switch 选择器', link: '/components/switch' }
 ] // end

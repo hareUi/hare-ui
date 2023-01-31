@@ -8,7 +8,7 @@ export default defineComponent({
   props: switchProps,
   setup(props, { slots }) {
     return () => (
-      <div class={NAME}>
+      <div>
         <div>h-switch</div>
       </div>
     )
