@@ -5,6 +5,7 @@
   </div>
 </template>
 
+
 <style>
 .avatar-demo-3 .devui-avatar {
   margin-right: 10px;
