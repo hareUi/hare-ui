@@ -17,6 +17,6 @@ jobs:
         with:
           version: 7.14.2
       - name: Install modules
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
       - name: Run Test
         run: pnpm run test

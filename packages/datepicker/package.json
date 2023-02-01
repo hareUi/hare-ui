@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hare-ui/utils": "workspace:^1.0.0"
+    "@hare-ui/utils": "workspace:^1.0.0",
+    "dayjs": "^1.11.7"
   }
 }

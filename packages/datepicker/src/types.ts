@@ -9,6 +9,10 @@ export const datepickerProps = {
   mode: {
     type: String as PropType<IDatePickerMode>,
     default: 'date'
+  },
+  format: {
+    type: String,
+    default: 'YYYY-MM-DD'
   }
 } as const
 

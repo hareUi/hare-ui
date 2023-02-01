@@ -43,7 +43,8 @@
     "test": "vitest",
     "prepare": "husky install",
     "prettier": "prettier --write --loglevel log */**/*.{js,json,tsx,css,less,scss,vue,html,md,ts}",
-    "commit": "git add . && pnpm lint && git cz"
+    "commit": "git add . && pnpm lint && git cz",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
@@ -71,6 +72,8 @@
     "@typescript-eslint/parser": "^5.48.2",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vitest/coverage-c8": "^0.28.3",
+    "@vue/test-utils": "^2.2.8",
     "commitizen": "^4.3.0",
     "conventional-changelog-cli": "^2.2.2",
     "cz-conventional-changelog-zh": "^0.0.2",
