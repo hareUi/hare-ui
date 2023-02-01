@@ -3,9 +3,9 @@ import AvatarBodyIcon from './components/avatar-body-icon'
 import AvatarNoBodyIcon from './components/avatar-nobody-icon'
 import { AvatarProps, avatarProps } from './avatar-types'
 import { useNamespace } from '../src/use-namespace'
-// import '../../scss/components/avatar'
+import '../../scss/components/avatar/_avatar.module.scss'
 export default defineComponent({
-  name: 'DAvatar',
+  name: 'h-avatar',
   props: avatarProps,
   setup(props: AvatarProps) {
     const { name, width, height, customText, gender, imgSrc, isRound } =
