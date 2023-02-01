@@ -11,6 +11,7 @@ import Switch from '@hare-ui/switch'
 import Alert from '@hare-ui/alert'
 import SubMenu from '@hare-ui/sub-menu'
 import Datepicker from '@hare-ui/datepicker'
+import Avatar from '@hare-ui/avatar'
 // import component end
 import '../scss/index.scss'
 
@@ -26,7 +27,8 @@ const components = [
   Switch,
   Alert,
   SubMenu,
-  Datepicker
+  Datepicker,
+  Avatar
 ] // components
 
 // 全局动态添加组件
