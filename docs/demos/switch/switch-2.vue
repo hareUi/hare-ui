@@ -1,19 +1,16 @@
 <template>
   <div class="margin--every">
     <h-switch
-      v-model="active1"
-    ></h-switch>
-    <h-switch
-      width="50px"
-      v-model="active2"
+      v-model="active"
+      active-text="开启"
+      inactive-text="关闭"
     ></h-switch>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-const active1 = ref(true)
-const active2 = ref(true)
+const active = ref(true)
 </script>
 
 <style scoped lang="scss">

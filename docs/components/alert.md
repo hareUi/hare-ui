@@ -4,9 +4,9 @@
 
 <preview path="../demos/alert/alert-1.vue" title="基本使用" description="使用不同类型的Alert进行提示。"></preview>
 
-## 文字居中
+## 居中文字
 
-<preview path="../demos/alert/alert-2.vue" title="文字居中" description="使用`center`居中文字。"></preview>
+<preview path="../demos/alert/alert-2.vue" title="居中文字" description="使用`center`居中文字。"></preview>
 
 ## 字体图标
 

@@ -7,7 +7,6 @@ export default defineComponent({
   name: NAME,
   props: alertProps,
   setup(props, { slots }) {
-    // console.log(props)
     // 将类型参数与CSS类对应
     const classMap = {
       success: 'h-alert--success',

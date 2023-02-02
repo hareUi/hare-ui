@@ -30,12 +30,13 @@ export default defineComponent({
     const renderChildren = () => {
       if (slots.default) {
         const childrenComps = slots.default().map((child, index) => {
-          //@ts-ignore
+          // @ts-ignore
           if (child.type.name === 'h-menu-item') {
             return child
           } else {
             console.warn('Warning: h-sub-menu的子组件应为h-menu-item')
           }
+          return null
         })
         return <ul class="h-sub-menu">{childrenComps}</ul>
       }

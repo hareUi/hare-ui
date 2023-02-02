@@ -49,16 +49,17 @@ export default defineComponent({
     }
     provide('Date', dpContext)
     const renderMode = () => {
+      let Mode
       switch (props.mode) {
         case 'date':
-          return <dateMode></dateMode>
+          Mode = <dateMode></dateMode>
+          break
         case 'week':
           return <weekMode></weekMode>
         case 'year':
           return <yearMode></yearMode>
-        default:
-          return <weekMode></weekMode>
       }
+      return Mode
     }
     // 控制下拉日历是否显示
     const mainIsActive = ref(false)
