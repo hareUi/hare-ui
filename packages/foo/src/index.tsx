@@ -1,6 +1,7 @@
 import { defineComponent } from 'vue'
 import { fooProps } from './types'
 import { testLog } from '@hare-ui/utils'
+import Test from './test'
 
 const NAME = 'h-foo'
 

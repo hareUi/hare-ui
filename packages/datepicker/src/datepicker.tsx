@@ -5,24 +5,47 @@ import {
   onMounted,
   inject,
   provide,
-  Ref
+  Ref,
+  onUnmounted,
+  nextTick
 } from 'vue'
+import * as dayjs from 'dayjs'
 import { datepickerProps } from './types'
 import dateMode from './mode/date'
 import weekMode from './mode/week'
+import yearMode from './mode/year'
 const NAME = 'h-datepicker'
 
 export default defineComponent({
   name: NAME,
   props: datepickerProps,
+  components: {
+    dateMode,
+    weekMode,
+    yearMode
+  },
   setup(props, ctx) {
     // console.log(props.mode);
+    onMounted(() => {
+      document.addEventListener('click', closeMenu)
+    })
+    const elem = ref()
+    const closeMenu = (e: PointerEvent) => {
+      if (!elem.value.contains(e.target)) {
+        if (mainIsActive.value) {
+          mainIsActive.value = false
+        }
+      }
+    }
+    onUnmounted(() => {
+      document.removeEventListener('click', closeMenu)
+    })
     const pickedDate = ref('')
     const dpContext = (e: Ref<string>) => {
       if (e) {
         mainIsActive.value = false
       }
-      pickedDate.value = e.value
+      pickedDate.value = dayjs(e.value).format(props.format)
     }
     provide('Date', dpContext)
     const renderMode = () => {
@@ -32,14 +55,16 @@ export default defineComponent({
           Mode = <dateMode></dateMode>
           break
         case 'week':
-        default:
-          Mode = <weekMode></weekMode>
+          return <weekMode></weekMode>
+        case 'year':
+          return <yearMode></yearMode>
       }
       return Mode
     }
     // 控制下拉日历是否显示
     const mainIsActive = ref(false)
-    const handleInputClick = () => {
+    const handleInputClick = e => {
+      // e.stopPropagation()
       mainIsActive.value = !mainIsActive.value
     }
     // main的类
@@ -56,7 +81,7 @@ export default defineComponent({
       return sizeClass.value
     })
     return () => (
-      <div class={classes.value}>
+      <div ref={elem} class={classes.value}>
         <input
           value={pickedDate.value}
           onClick={handleInputClick}
