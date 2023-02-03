@@ -1,0 +1,14 @@
+@mixin dpHeader() {
+  .h-dp__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .h-dp__header-btn {
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+    cursor: pointer;
+    &:hover {
+      color: red;
+    }
+  }
+}

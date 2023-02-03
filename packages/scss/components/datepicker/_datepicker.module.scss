@@ -1,9 +1,9 @@
-
-@import "../../base/var.module";
+@import '../../base/var.module';
 @import './mixin.scss';
 @import './var';
-
+@import './layout.scss';
 .h-datepicker {
+  @include dpLayout();
   @include commonWrapper($dp-wrapper-height-md);
 
   &--lg {

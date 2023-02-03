@@ -1,6 +1,13 @@
-import { ExtractPropTypes, PropType } from 'vue'
+import { ExtractPropTypes, PropType, ref, Ref } from 'vue'
 type IDatePickerSize = 'sm' | '' | 'lg'
-type IDatePickerMode = 'date' | 'year' | 'mouth' | 'week'
+export type IDatePickerMode = 'date' | 'year' | 'mouth' | 'week'
+export interface dpContext {
+  currentDate: Ref<number>
+  currentYear: Ref<number>
+  currentMonth: Ref<number>
+  dpEmit: (e: Ref<string>) => void
+  curMode: Ref<string>
+}
 export const datepickerProps = {
   size: {
     type: String as PropType<IDatePickerSize>,

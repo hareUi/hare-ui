@@ -1,0 +1,78 @@
+@import './var';
+@mixin dpContent() {
+  .h-dp__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    &-title {
+      display: flex;
+    }
+    &-date {
+      padding: 2px 3px;
+      @include common();
+      @include dateMode();
+    }
+    &-year {
+      padding: 5px 10px;
+      gap: 20px;
+      @include common();
+      @include yearMode();
+    }
+  }
+}
+@mixin common() {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin dateMode() {
+  .h-dp-title-item {
+    font-weight: 500;
+    color: $dp-wrapper-border-color-hover;
+  }
+  .h-dp-main-item {
+    font-size: 12px;
+    // line-height: 24px;
+    border-radius: 5px;
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
+    &:hover {
+      color: #fff;
+      background-color: $dp-wrapper-border-color-hover;
+    }
+  }
+  .h-dp-cell {
+    width: calc(100% / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-grey {
+      color: #999;
+    }
+    &-now {
+      border: 1px solid $dp-wrapper-border-color-hover;
+    }
+  }
+}
+@mixin yearMode() {
+  .h-dp-cell {
+    width: calc(100% / 3 - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s;
+    &:hover {
+      color: #fff;
+      background-color: $dp-wrapper-border-color-hover;
+    }
+    &-grey {
+      color: #999;
+    }
+    &-now {
+      border: 1px solid $dp-wrapper-border-color-hover;
+    }
+  }
+}

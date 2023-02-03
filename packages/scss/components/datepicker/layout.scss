@@ -1,0 +1,14 @@
+@import './mixin.scss';
+@import './header.scss';
+@import './content.scss';
+@import './footer.scss';
+@mixin dpLayout() {
+  .h-datepicker__main {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  @include dpHeader();
+  @include dpContent();
+  @include dpFooter();
+}

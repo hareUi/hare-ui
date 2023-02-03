@@ -13,7 +13,13 @@ const titleProps = {
 export default defineComponent({
   name: 'dp-title',
   props: titleProps,
-  emits: ['doubleNext', 'singleNext', 'doublePrev', 'singlePrev'],
+  emits: [
+    'doubleNext',
+    'singleNext',
+    'doublePrev',
+    'singlePrev',
+    'secondhandYear'
+  ],
   setup(props, { emit }) {
     return () => {
       const doublePrev = () => {
@@ -28,7 +34,10 @@ export default defineComponent({
       const singleNext = () => {
         emit('singleNext')
       }
-      const toYearMode = () => {}
+      const toYearMode = () => {
+        console.log('title')
+        emit('secondhandYear')
+      }
       const titleType = () => {
         if (props.mode === 'date') {
           return (

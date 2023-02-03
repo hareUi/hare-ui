@@ -46,20 +46,7 @@ export default defineComponent({
       const yearMode = (type: string) => {
         console.log(props[type + 'Data'])
 
-        return props[type + 'Data'].map((item: string, index: number) => {
-          type = type === 'current' ? '' : type
-          return (
-            <span
-              class={`hare-datepicker__row__content--year__item${
-                type === '' ? '' : '--grey'
-              }`}
-              key={type + item}
-              onClick={() => pickDate(type + item)}
-            >
-              {item}
-            </span>
-          )
-        })
+        return
       }
       return (
         <div class="hare-datepicker__row__content">

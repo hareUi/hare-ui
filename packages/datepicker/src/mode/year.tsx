@@ -1,17 +1,19 @@
 import dpTitle from '../common/title'
 import dpRowContent from '../common/row-content'
-import { defineComponent } from 'vue'
+import { defineComponent, inject } from 'vue'
 import * as dayjs from 'dayjs'
+import { dpContext } from '../types'
 export default defineComponent({
   name: 'yearMode',
   components: { dpTitle, dpRowContent },
-  setup() {
+  setup(props, { emit }) {
+    const { currentYear, dpEmit: fn } = inject('DP_CTX') as dpContext
     return () => {
       const prevData = []
       const currentData = []
       const nextData = []
-      const thisYear = dayjs().year()
-      console.log(thisYear)
+      const thisYear = currentYear.value as number
+      // console.log(thisYear)
 
       for (let i = 0; i < 10; i++) {
         if ((thisYear + i) % 10 === 0) {
@@ -27,21 +29,30 @@ export default defineComponent({
         }
         currentData.unshift(thisYear - i)
       }
-      console.log(currentData, nextData, prevData)
-
+      // console.log(currentData, nextData, prevData)
+      const pickYear = item => {
+        fn(item)
+      }
       return (
-        <div class="hare-datepicker">
-          <dpTitle
-            mode="year"
-            yearRangeStart="2020"
-            yearRangeEnd="2029"
-          ></dpTitle>
-          <dpRowContent
-            mode="year"
-            prevData={prevData}
-            currentData={currentData}
-            nextData={nextData}
-          ></dpRowContent>
+        <div class="h-dp__content-year">
+          {prevData.map((item, index) => {
+            return <div class={'h-dp-cell h-dp-cell-grey'}>{item}</div>
+          })}
+          {currentData.map((item, index) => {
+            return (
+              <div
+                onClick={() => pickYear(item)}
+                class={`h-dp-cell ${
+                  item === dayjs().year() ? 'h-dp-cell-now' : ''
+                }`}
+              >
+                {item}
+              </div>
+            )
+          })}
+          {nextData.map((item, index) => {
+            return <div class={'h-dp-cell h-dp-cell-grey'}>{item}</div>
+          })}
         </div>
       )
     }
