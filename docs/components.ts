@@ -12,5 +12,6 @@ export const components = [
   { text: 'Datepicker 日期选择框', link: '/components/datepicker' },
   { text: 'Alert 警告', link: '/components/alert' },
   { text: 'Switch 选择器', link: '/components/switch' },
-  { text: 'Avatar 头像', link: '/components/avatar' }
+  { text: 'Avatar 头像', link: '/components/avatar' },
+  { text: 'Empty 空状态', link: '/components/empty' }
 ] // end
