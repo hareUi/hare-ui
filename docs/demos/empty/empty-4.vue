@@ -1,5 +1,5 @@
 <template>
-  <h-empty description="一条新的描述"></h-empty>
+  <h-empty imageSize="100"></h-empty>
 </template>
 
 <script lang="ts" setup>

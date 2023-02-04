@@ -9,9 +9,14 @@
 
 <preview path="../demos/empty/empty-3.vue" title="更换图片" description=" "></preview>
 
+## 调整大小
+
+<preview path="../demos/empty/empty-4.vue" title="调整大小" description=" "></preview>
+
 ## 添加描述
 
 <preview path="../demos/empty/empty-2.vue" title="添加描述" description=" "></preview>
+
 
 ## 组件 API
 
@@ -19,19 +24,10 @@
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |  ----  | ----  | ----  | ----  | ----  |
-|  |  |  |  | |
+|  imgage  | 图片地址  | string  |  |  |
+|  imageSize | 图片宽度 | number |  | 200 |
+|  description | 文字描述 | string |  | do not have data here |
 
-### Methods 方法
-
-| 方法名 | 说明 | 参数 | 返回值 |
-|  ----  | ----  | ----  | ----  |
-|  |  |  |  |
-
-### Events 事件
-
-| 事件名 | 说明 | 参数 | 返回值 |
-|  ----  | ----  | ----  | ----  |
-|  |  |  |  |
 
 ### Slots 插槽
 

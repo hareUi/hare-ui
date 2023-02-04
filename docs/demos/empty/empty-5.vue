@@ -1,5 +1,7 @@
 <template>
-  <h-empty description="一条新的描述"></h-empty>
+  <h-empty >
+      <h-button>默认按钮</h-button>
+  </h-empty>
 </template>
 
 <script lang="ts" setup>

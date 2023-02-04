@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for datepicker/src/types.ts</title>
+    <title>Code coverage report for empty/src/empty.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">datepicker/src</a> types.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">empty/src</a> empty.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>23/23</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>23/23</span>
             </div>
         
             
@@ -82,7 +82,11 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -101,25 +105,33 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ExtractPropTypes, PropType } from 'vue'
-type IDatePickerSize = 'sm' | '' | 'lg'
-type IDatePickerMode = 'date' | 'year' | 'mouth' | 'week'
-export const datepickerProps = {
-  size: {
-    type: String as PropType&lt;IDatePickerSize&gt;,
-    default: ''
-  },
-  mode: {
-    type: String as PropType&lt;IDatePickerMode&gt;,
-    default: 'date'
-  },
-  format: {
-    type: String,
-    default: 'YYYY-MM-DD'
-  }
-} as const
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { defineComponent } from 'vue'
+import { emptyProps } from './types'
 &nbsp;
-export type DatepickerProps = ExtractPropTypes&lt;typeof datepickerProps&gt;
+const NAME = 'h-empty'
+&nbsp;
+export default defineComponent({
+  name: NAME,
+  props: emptyProps,
+  setup(props, { slots }) {
+    console.log(11111)
+    // 不太理解插槽哇 如果想在这个组件里显示按钮什么的是需要额外注册嘛
+    // 先写别的吧
+    return () =&gt; (
+      &lt;div class={NAME}&gt;
+        &lt;div class="inner"&gt;
+          {/*                                                          !!!!!pxpxpxpxpxpxpx!!!!! */}
+          &lt;img src={props.image} alt="空状态"  style={[`width:${props.imageSize}`+`px`]} /&gt;
+          &lt;p&gt;{props.description}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    )
+  }
+})
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
