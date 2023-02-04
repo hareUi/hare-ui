@@ -13,6 +13,7 @@ import SubMenu from '@hare-ui/sub-menu'
 import Datepicker from '@hare-ui/datepicker'
 import Avatar from '@hare-ui/avatar'
 import Empty from '@hare-ui/empty'
+import Card from '@hare-ui/card'
 // import component end
 import '../scss/index.scss'
 
@@ -30,7 +31,8 @@ const components = [
   SubMenu,
   Datepicker,
   Avatar,
-  Empty
+  Empty,
+  Card
 ] // components
 
 // 全局动态添加组件

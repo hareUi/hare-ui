@@ -13,6 +13,7 @@
     "@hare-ui/alert": "workspace:^1.0.0",
     "@hare-ui/avatar": "workspace:^1.0.0",
     "@hare-ui/button": "workspace:^1.0.0",
+    "@hare-ui/card": "workspace:^1.0.0",
     "@hare-ui/col": "workspace:^1.0.0",
     "@hare-ui/datepicker": "workspace:^1.0.0",
     "@hare-ui/empty": "workspace:^1.0.0",
