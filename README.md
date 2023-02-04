@@ -25,6 +25,12 @@ http://150.158.88.84:4873/
 >
 > Q3:选用模板(选.tsx)
 
+## 查看覆盖率
+> pnpm run coverage
+
+## 提交
+> pnpm run commit
+
 ## 其他说明
 ### 引入了husky
 提交之前会先对代码eslint,prettier一遍
