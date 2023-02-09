@@ -5,10 +5,8 @@
   </div>
 </template>
 
-
-
 <style>
-.avatar-demo-3 .devui-avatar {
+.avatar-demo-3 .h-avatar {
   margin-right: 10px;
 
 }

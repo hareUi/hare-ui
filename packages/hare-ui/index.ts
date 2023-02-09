@@ -14,6 +14,7 @@ import Datepicker from '@hare-ui/datepicker'
 import Avatar from '@hare-ui/avatar'
 import Empty from '@hare-ui/empty'
 import Card from '@hare-ui/card'
+import Progress from '@hare-ui/progress'
 // import component end
 import '../scss/index.scss'
 
@@ -32,7 +33,8 @@ const components = [
   Datepicker,
   Avatar,
   Empty,
-  Card
+  Card,
+  Progress
 ] // components
 
 // 全局动态添加组件

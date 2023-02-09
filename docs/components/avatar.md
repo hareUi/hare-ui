@@ -12,25 +12,10 @@
 
 头像组件传入'name'属性时，会根据一定的规则显示头像的字段，具体规则参见 API。
 
-demo
+
 <preview path="../demos/avatar/avatar-1.vue" title="基本使用" description=" "></preview>
 
-```vue
-<template>
-  <div class="avatar-demo-1">
-    <h-avatar style="text-align: right" gender="Female" name="组件头像"></h-avatar>
-    <h-avatar name="MyAvatar"></h-avatar>
-    <h-avatar name="Avatar1 Avatar2"></h-avatar>
-    <h-avatar name="1Avatar"></h-avatar>
-  </div>
-</template>
 
-<style>
-.avatar-demo-1 .devui-avatar {
-  margin-right: 10px;
-}
-</style>
-```
 
 
 ### 头像的基础配置
@@ -40,49 +25,13 @@ demo
 demo
 <preview path="../demos/avatar/avatar-2.vue" title="基本使用" description=" "></preview>
 
-```vue
-<template>
-  <div class="avatar-demo-2">
-    <h-avatar name="Avatar" :width="28" :height="28"></h-avatar>
-    <h-avatar customText="DevUI" :width="80" :height="80" :isRound="false"></h-avatar>
-    <h-avatar imgSrc="/../../assets/logo.svg" :width="100" :height="100" :isRound="false"></h-avatar>
-  </div>
-</template>
-
-<style>
-.avatar-demo-2 {
-  display: flex;
-  align-items: center;
-}
-.avatar-demo-2 .devui-avatar {
-  margin-right: 10px;
-}
-</style>
-```
-
 
 ### 头像的特殊显示
 
 头像组件会对一些特殊情况进行处理，具体表现为用户不存在或展示默认头像，详细规则参见 API。
 
-demo
+
 <preview path="../demos/avatar/avatar-3.vue" title="基本使用" description=" "></preview>
-
-```vue
-<template>
-  <div class="avatar-demo-3">
-    <h-avatar></h-avatar>
-    <h-avatar name=""></h-avatar>
-  </div>
-</template>
-
-<style>
-.avatar-demo-3 .devui-avatar {
-  margin-right: 10px;
-}
-</style>
-```
-
 
 
 ### Avatar 参数

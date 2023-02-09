@@ -14,5 +14,6 @@ export const components = [
   { text: 'Switch 选择器', link: '/components/switch' },
   { text: 'Avatar 头像', link: '/components/avatar' },
   { text: 'Empty 空状态', link: '/components/empty' },
-  { text: 'Card 卡片', link: '/components/card' }
+  { text: 'Card 卡片', link: '/components/card' },
+  { text: 'Progress 进度展示', link: '/components/progress' }
 ] // end
