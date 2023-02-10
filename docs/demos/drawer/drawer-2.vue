@@ -3,13 +3,13 @@
   <h-drawer v-model="visible" position="left" style="padding: 20px;">Left Drawer</h-drawer>
 </template>
 <script>
-import { defineComponent, ref } from 'vue'
+import { ref } from 'vue'
 
-export default defineComponent({
+export default ({
   setup() {
-    const visible = ref(false)
+    const visible = ref(true)
     const showDrawer = () => {
-      console.log('lala')
+      visible.value = true
     }
 
     return { visible, showDrawer }
