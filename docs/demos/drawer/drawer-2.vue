@@ -7,7 +7,7 @@ import { ref } from 'vue'
 
 export default ({
   setup() {
-    const visible = ref(true)
+    const visible = ref(false)
     const showDrawer = () => {
       visible.value = true
     }
