@@ -24,6 +24,7 @@
     "@hare-ui/input": "workspace:^1.0.0",
     "@hare-ui/menu": "workspace:^1.0.0",
     "@hare-ui/menu-item": "workspace:^1.0.0",
+    "@hare-ui/message": "workspace:^1.0.0",
     "@hare-ui/progress": "workspace:^1.0.0",
     "@hare-ui/sub-menu": "workspace:^1.0.0",
     "@hare-ui/switch": "workspace:^1.0.0"
