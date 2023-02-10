@@ -1,0 +1,51 @@
+@import "../../base/var.module";
+
+$--color-primary: #489EFF;
+$--color-white: #FFFFFF;
+$--color-black: #e800ee;
+$--color-success: #67C23A;
+$--color-warning:#E6A23C;
+$--color-danger: #F56C6C;
+$--color-info: #909399;
+$namespace: 'h';
+$state-prefix : 'is-';
+$modifier-separator: '--';
+$element-separator: '_';
+
+.h-message {
+  position: fixed;
+  top: 20px;
+  left : 50%;
+  transform: translateX(-50%);
+  min-width: 30px;
+  border-radius: 5px;
+  background: red;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  z-index: 999;
+  color: #ffff;
+  padding: 0 10px;
+  transition: all 0.4s;
+  &--info{
+    background: $--color-info;
+  }
+  &--warning{
+    background: $--color-warning;
+  }
+  &--success{
+    background: $--color-success;
+  }
+  &--danger{
+    background: $--color-danger;
+  }
+  .is-center{
+    justify-content: center;
+  }
+}
+
+.h-message-fade {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}
+
