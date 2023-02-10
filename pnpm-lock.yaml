@@ -195,6 +195,7 @@ importers:
       '@hare-ui/input': workspace:^1.0.0
       '@hare-ui/menu': workspace:^1.0.0
       '@hare-ui/menu-item': workspace:^1.0.0
+      '@hare-ui/row': workspace:^1.0.0
       '@hare-ui/sub-menu': workspace:^1.0.0
       '@hare-ui/switch': workspace:^1.0.0
       rimraf: ^4.1.0
@@ -212,6 +213,7 @@ importers:
       '@hare-ui/input': link:../input
       '@hare-ui/menu': link:../menu
       '@hare-ui/menu-item': link:../menu-item
+      '@hare-ui/row': link:../row
       '@hare-ui/sub-menu': link:../sub-menu
       '@hare-ui/switch': link:../switch
     devDependencies:

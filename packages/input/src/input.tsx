@@ -1,12 +1,4 @@
-import {
-  computed,
-  defineComponent,
-  inject,
-  ref,
-  toRefs,
-  onMounted,
-  ComputedRef
-} from 'vue'
+import { computed, defineComponent, inject, ref } from 'vue'
 import { inputProps } from './types'
 import { FormItemContext } from '../../form-item/src/types'
 
@@ -39,7 +31,6 @@ export default defineComponent({
     let preValue = getValue.value
     /**
      * 判断是否符合一键清空的条件
-     *
      */
     const isShowClear = computed(
       () => props.clearable && !props.disabled && getValue.value
@@ -99,11 +90,15 @@ export default defineComponent({
     const isShowPwd = ref(false)
     const currentType = ref(props.type)
     const handleIsShowPwd = () => {
-      // console.log(isShowPwd.value);
+      console.log(isShowPwd.value)
+
       currentType.value =
         currentType.value === 'password' ? props.type : 'password'
       isShowPwd.value = !isShowPwd.value
-      // emit("update:modelValue","")
+      showPwdIconType()
+    }
+    const showPwdIconType = () => {
+      return isShowPwd.value ? 'eye-fill' : 'eye-close'
     }
     return () => (
       <div class={wrapperClasses.value}>
@@ -132,11 +127,9 @@ export default defineComponent({
           </div>
         )}
         {isShowClear.value && <h-icon onClick={onClear} name="close"></h-icon>}
+        {/* {renderIsShowPwd()} */}
         {props.showPassword && (
-          <h-icon
-            onClick={handleIsShowPwd}
-            name={isShowPwd.value ? 'eye-fill' : 'eye-close'}
-          ></h-icon>
+          <h-icon onClick={handleIsShowPwd} name={showPwdIconType()}></h-icon>
         )}
       </div>
     )

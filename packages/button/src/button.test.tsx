@@ -1,5 +1,6 @@
 import Button from './button'
 import { render } from '@testing-library/vue'
+
 test('should word', () => {
   const { getByRole } = render(Button)
   getByRole('button')

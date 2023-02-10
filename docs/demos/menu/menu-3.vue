@@ -1,10 +1,10 @@
 <template>
   <h-menu :defaultIndex="'a'" mode="vertical" style="width: 100px">
-    <h-sub-menu index="a" title="a">
+    <h-submenu index="a" title="a">
       <h-menu-item index="a-a">a-a</h-menu-item>
       <h-menu-item index="a-b">a-b</h-menu-item>
       <h-menu-item index="a-c">a-c</h-menu-item>
-    </h-sub-menu>
+    </h-submenu>
     <h-menu-item index="b">b</h-menu-item>
     <h-menu-item index="c">c</h-menu-item>
   </h-menu>

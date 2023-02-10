@@ -19,7 +19,11 @@ export default defineComponent({
   ],
   props,
   setup(props, { emit }) {
-    const { curMode: mode } = inject('DP_CTX') as dpContext
+    const {
+      curMode: mode,
+      currentMonth,
+      currentYear
+    } = inject('DP_CTX') as dpContext
     // 不同mode.value下不同按键的切换方式不同，抛出给主组件处理
     const singlePrev = () => {
       emit('singlePrev')
@@ -37,22 +41,22 @@ export default defineComponent({
       emit('secondhandYear')
     }
     const titleType = () => {
-      if (mode.value === 'date') {
+      if (mode.value === 'date' || mode.value === 'datetime') {
         return (
           <div>
             <span onClick={toYearMode} class="h-dp__header-btn">
-              {props.currentYear}年{' '}
+              {currentYear.value}年{' '}
             </span>
-            <span class="h-dp__header-btn">{props.currentMonth}月</span>
+            <span class="h-dp__header-btn">{currentMonth.value + 1}月</span>
           </div>
         )
       } else if (mode.value === 'month') {
         return (
           <div class="h-dp__header-btn">
-            <span>{props.currentYear}</span>
+            <span>{currentYear.value}</span>
           </div>
         )
-      } else {
+      } else if (mode.value === 'year') {
         return (
           <div>
             <span class="h-dp__header-btn">{props.yearRangeStart}</span>
@@ -67,13 +71,13 @@ export default defineComponent({
           <div class="h-dp__header-btn" onClick={doublePrev}>
             &lt;&lt;
           </div>
-          {mode.value === 'date' && (
+          {(mode.value === 'date' || mode.value === 'datetime') && (
             <div class="h-dp__header-btn" onClick={singlePrev}>
               &lt;
             </div>
           )}
           {titleType()}
-          {mode.value === 'date' && (
+          {(mode.value === 'date' || mode.value === 'datetime') && (
             <div class="h-dp__header-btn" onClick={singleNext}>
               &gt;
             </div>

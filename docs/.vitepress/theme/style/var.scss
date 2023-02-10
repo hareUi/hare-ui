@@ -22,4 +22,7 @@
     #42efcf 100%
   );
   --vp-home-hero-image-filter: blur(150px);
+  .vitepress-demo-preview__ant-design__container {
+    overflow: visible;
+  }
 }

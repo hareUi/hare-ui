@@ -1,4 +1,4 @@
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs/esm/index.js'
 export const dateFormat = (
   year: string | number,
   month: string | number,
