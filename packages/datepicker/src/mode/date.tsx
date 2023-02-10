@@ -2,8 +2,8 @@ import dpTitle from '../common/title'
 import dpRowTitle from '../common/row-title'
 import dpRowContent from '../common/row-content'
 import dpRowFooter from '../common/row-footer'
-import { defineComponent, inject, provide } from 'vue'
-import { computed, ref } from 'vue'
+import { defineComponent, inject, computed, ref } from 'vue'
+
 const title = ['日', '一', '二', '三', '四', '五', '六']
 const currentDate = ref(new Date().getDate())
 const currentMonth = ref(new Date().getMonth())

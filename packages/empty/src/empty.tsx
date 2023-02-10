@@ -17,7 +17,7 @@ export default defineComponent({
           <img
             src={props.image}
             alt="空状态"
-            style={[`width:${props.imageSize}` + `px`]}
+            style={[`width:${props.imageSize}` + 'px']}
           />
           <p>{props.description}</p>
         </div>

@@ -1,5 +1,4 @@
-import { defineComponent } from 'vue'
-import { PropType } from 'vue'
+import { defineComponent, PropType } from 'vue'
 type mode = 'year' | 'month' | 'date'
 const titleProps = {
   // mode为month和date时使用

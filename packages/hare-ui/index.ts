@@ -15,6 +15,7 @@ import Avatar from '@hare-ui/avatar'
 import Empty from '@hare-ui/empty'
 import Card from '@hare-ui/card'
 import Progress from '@hare-ui/progress'
+import Drawer from '@hare-ui/drawer'
 // import component end
 import '../scss/index.scss'
 
@@ -34,7 +35,8 @@ const components = [
   Avatar,
   Empty,
   Card,
-  Progress
+  Progress,
+  Drawer
 ] // components
 
 // 全局动态添加组件
