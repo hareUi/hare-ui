@@ -23,6 +23,7 @@
     "@hare-ui/form-item": "workspace:^1.0.0",
     "@hare-ui/icon": "workspace:^1.0.0",
     "@hare-ui/input": "workspace:^1.0.0",
+    "@hare-ui/link": "workspace:^1.0.0",
     "@hare-ui/menu": "workspace:^1.0.0",
     "@hare-ui/menu-item": "workspace:^1.0.0",
     "@hare-ui/message": "workspace:^1.0.0",

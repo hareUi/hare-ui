@@ -1,0 +1,74 @@
+@import '../../base';
+
+// 字体大小
+$link-font-default: $font-body-medium;
+
+// 状态色 - 主色
+$link-color-primary: $brand-color;
+$link-color-primary-hover: $brand-color-hover;
+$link-color-primary-active: $brand-color-active;
+$link-color-primary-disabled: $brand-color-disabled;
+
+// 状态色 - 成功
+$link-color-success: $success-color;
+$link-color-success-hover: $success-color-hover;
+$link-color-success-active: $success-color-active;
+$link-color-success-disabled: $success-color-disabled;
+
+// 状态色 - 警告
+$link-color-warning: $warning-color;
+$link-color-warning-hover: $warning-color-hover;
+$link-color-warning-active: $warning-color-active;
+$link-color-warning-disabled: $warning-color-disabled;
+
+// 状态色 - 危险
+$link-color-error: $error-color;
+$link-color-error-hover: $error-color-hover;
+$link-color-error-active: $error-color-active;
+$link-color-error-disabled: $error-color-disabled;
+
+// 状态色 - 禁用
+
+.h-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: $link-font-default;
+
+  &--primary{
+    color: $link-color-primary !important;
+  }
+  &--success{
+    color: $link-color-success !important;
+  }
+  &--waring{
+    color: $link-color-primary !important;
+  }
+  &--danger{
+    color: $link-color-error !important;
+  }
+
+}
+
+.is-underline{
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+

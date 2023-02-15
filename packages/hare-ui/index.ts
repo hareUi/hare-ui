@@ -18,6 +18,7 @@ import Progress from '@hare-ui/progress'
 import Drawer from '@hare-ui/drawer'
 import Message from '@hare-ui/message'
 
+import Link from '@hare-ui/link'
 // import component end
 import '../scss/index.scss'
 
@@ -39,7 +40,8 @@ const components = [
   Card,
   Progress,
   Drawer,
-  Message
+  Message,
+  Link
 ] // components
 
 // 全局动态添加组件
