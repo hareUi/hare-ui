@@ -1,5 +1,41 @@
 
 @import "../../base/var.module";
 
-.h-card {
+// *{
+//     padding: 10px;
+// }
+.shadow-always{
+    *{
+        padding: 10px;
+    }
+    border: 1px solid #d9d8d8;
+    // -webkit-box-shadow: 3px 3px 8px #888888;
+    // box-shadow: 3px 3px 8px #888888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadow-hover{
+    *{
+        padding: 10px;
+    }
+    border: 1px solid #d9d8d8;
+    transition: all 0.5s;/*持续时间*/
+}
+
+.shadow-hover:hover{
+    *{
+        padding: 10px;
+    }
+    border: 1px solid #d9d8d8;
+    // -webkit-box-shadow: 3px 3px 8px #888888;
+    // box-shadow: 3px 3px 8px #888888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s;/*持续时间*/
+}
+
+.shadow-never{
+    *{
+        padding: 10px;
+    }
+    border: 1px solid #d9d8d8;
 }

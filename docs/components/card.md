@@ -5,28 +5,18 @@
 
 <preview path="../demos/card/card-1.vue" title="基本使用" description=" "></preview>
 
+## 带图片
+
+<preview path="../demos/card/card-3.vue" title="带图片" description=" "></preview>
+
+## 设置阴影
+
+<preview path="../demos/card/card-2.vue" title="设置阴影" description=" "></preview>
+
 ## 组件 API
 
 ### Attributes 属性
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |  ----  | ----  | ----  | ----  | ----  |
-|  |  |  |  | |
-
-### Methods 方法
-
-| 方法名 | 说明 | 参数 | 返回值 |
-|  ----  | ----  | ----  | ----  |
-|  |  |  |  |
-
-### Events 事件
-
-| 事件名 | 说明 | 参数 | 返回值 |
-|  ----  | ----  | ----  | ----  |
-|  |  |  |  |
-
-### Slots 插槽
-
-| 插槽名 | 说明 | 参数 |
-|  ----  | ----  | ----  |
-|  |  |  |
+| shadow | 	设置阴影显示时机 | String | always、hover、never | always |

@@ -314,6 +314,12 @@ importers:
     dependencies:
       '@hare-ui/utils': link:../utils
 
+  packages/table:
+    specifiers:
+      '@hare-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@hare-ui/utils': link:../utils
+
   packages/utils:
     specifiers:
       mitt: 1.1.3
