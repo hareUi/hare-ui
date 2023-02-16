@@ -145,12 +145,6 @@ importers:
     dependencies:
       '@hare-ui/utils': link:../utils
 
-  packages/back-to-top:
-    specifiers:
-      '@hare-ui/utils': workspace:^1.0.0
-    dependencies:
-      '@hare-ui/utils': link:../utils
-
   packages/button:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
@@ -219,6 +213,7 @@ importers:
     specifiers:
       '@hare-ui/alert': workspace:^1.0.0
       '@hare-ui/avatar': workspace:^1.0.0
+      '@hare-ui/back-to-top': workspace:^1.0.0
       '@hare-ui/button': workspace:^1.0.0
       '@hare-ui/card': workspace:^1.0.0
       '@hare-ui/col': workspace:^1.0.0
@@ -243,6 +238,7 @@ importers:
     dependencies:
       '@hare-ui/alert': link:../alert
       '@hare-ui/avatar': link:../avatar
+      '@hare-ui/back-to-top': link:../back-to-top
       '@hare-ui/button': link:../button
       '@hare-ui/card': link:../card
       '@hare-ui/col': link:../col
