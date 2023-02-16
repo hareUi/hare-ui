@@ -18,5 +18,6 @@ export const components = [
   { text: 'Progress 进度展示', link: '/components/progress' },
   { text: 'Drawer 抽屉', link: '/components/drawer' },
   { text: 'Message 消息', link: '/components/message' },
-  { text: 'Link 链接', link: '/components/link' }
+  { text: 'Link 链接', link: '/components/link' },
+  { text: 'Table 表格', link: '/components/table' }
 ] // end

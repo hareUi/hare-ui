@@ -224,12 +224,14 @@ importers:
       '@hare-ui/form-item': workspace:^1.0.0
       '@hare-ui/icon': workspace:^1.0.0
       '@hare-ui/input': workspace:^1.0.0
+      '@hare-ui/link': workspace:^1.0.0
       '@hare-ui/menu': workspace:^1.0.0
       '@hare-ui/menu-item': workspace:^1.0.0
       '@hare-ui/message': workspace:^1.0.0
       '@hare-ui/progress': workspace:^1.0.0
       '@hare-ui/sub-menu': workspace:^1.0.0
       '@hare-ui/switch': workspace:^1.0.0
+      '@hare-ui/table': workspace:^1.0.0
       rimraf: ^4.1.0
       vite-plugin-dts: ^1.7.1
     dependencies:
@@ -246,12 +248,14 @@ importers:
       '@hare-ui/form-item': link:../form-item
       '@hare-ui/icon': link:../icon
       '@hare-ui/input': link:../input
+      '@hare-ui/link': link:../link
       '@hare-ui/menu': link:../menu
       '@hare-ui/menu-item': link:../menu-item
       '@hare-ui/message': link:../message
       '@hare-ui/progress': link:../progress
       '@hare-ui/sub-menu': link:../sub-menu
       '@hare-ui/switch': link:../switch
+      '@hare-ui/table': link:../table
     devDependencies:
       rimraf: 4.1.0
       vite-plugin-dts: 1.7.1
