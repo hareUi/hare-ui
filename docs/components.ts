@@ -19,5 +19,6 @@ export const components = [
   { text: 'Drawer 抽屉', link: '/components/drawer' },
   { text: 'Message 消息', link: '/components/message' },
   { text: 'Link 链接', link: '/components/link' },
-  { text: 'Table 表格', link: '/components/table' }
+  { text: 'Table 表格', link: '/components/table' },
+  { text: 'BackToTop 回到顶部', link: '/components/back-to-top' }
 ] // end

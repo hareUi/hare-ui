@@ -20,6 +20,7 @@ import Message from '@hare-ui/message'
 
 import Link from '@hare-ui/link'
 import Table from '@hare-ui/table'
+import BackToTop from '@hare-ui/back-to-top'
 // import component end
 import '../scss/index.scss'
 
@@ -43,7 +44,8 @@ const components = [
   Drawer,
   Message,
   Link,
-  Table
+  Table,
+  BackToTop
 ] // components
 
 // 全局动态添加组件

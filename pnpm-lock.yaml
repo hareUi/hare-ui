@@ -145,6 +145,12 @@ importers:
     dependencies:
       '@hare-ui/utils': link:../utils
 
+  packages/back-to-top:
+    specifiers:
+      '@hare-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@hare-ui/utils': link:../utils
+
   packages/button:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
