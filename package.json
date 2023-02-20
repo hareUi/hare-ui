@@ -1,7 +1,7 @@
 {
   "name": "hare-ui",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./lib/hare-ui.umd.js",
   "types": "./lib/hare-ui/index.d.ts",
