@@ -1,5 +1,5 @@
 import { defineComponent, ref, inject } from 'vue'
-import dayjs from 'dayjs/esm'
+import dayjs from 'dayjs'
 import { dpContext } from '../types'
 export default defineComponent({
   name: 'dp-layout-right',
@@ -8,7 +8,7 @@ export default defineComponent({
     const pickedDate = ref('')
     const { dpEmit: fn, curMode: mode } = inject('DP_CTX') as dpContext
     const pickToday = () => {
-      //@ts-ignore
+      // @ts-ignore
       pickedDate.value = dayjs() + ''
       fn(pickedDate.value)
     }

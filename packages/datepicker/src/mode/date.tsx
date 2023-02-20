@@ -1,6 +1,6 @@
 import { defineComponent, inject, PropType, Ref, ref } from 'vue'
 import { dateFormat } from '../dateutils'
-import dayjs from 'dayjs/esm/index.js'
+import dayjs from 'dayjs'
 import { dpContext } from '../types'
 const props = {
   title: Array<String>,

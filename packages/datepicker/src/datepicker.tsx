@@ -5,11 +5,10 @@ import {
   onMounted,
   provide,
   onUnmounted,
-  toRefs,
-  Ref
+  toRefs
 } from 'vue'
-import dayjs from 'dayjs/esm/index.js'
-import { datepickerProps, IDatePickerMode } from './types'
+import dayjs from 'dayjs'
+import { datepickerProps } from './types'
 import {
   getCurrentYear,
   getCurrentDate,
