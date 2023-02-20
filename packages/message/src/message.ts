@@ -49,7 +49,7 @@ const Message = (options: IMessageParams) => {
     render(null, container)
   }
   render(vm, container)
-  document.body.append(container.firstElementChild)
+  document.body.appendChild<Element>(container.firstElementChild)
   instances.push(vm)
 }
 export default Message
