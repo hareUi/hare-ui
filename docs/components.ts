@@ -20,6 +20,5 @@ export const components = [
   { text: 'Message 消息', link: '/components/message' },
   { text: 'Link 链接', link: '/components/link' },
   { text: 'Table 表格', link: '/components/table' },
-  { text: 'Breadcrumb 面包屑', link: '/components/breadcrumb' },
   { text: 'BackToTop 回到顶部', link: '/components/back-to-top' }
 ] // end
