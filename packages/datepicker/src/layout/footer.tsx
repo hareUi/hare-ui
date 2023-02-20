@@ -1,5 +1,5 @@
 import { defineComponent, ref, inject } from 'vue'
-import dayjs from 'dayjs/esm'
+import dayjs from 'dayjs'
 import { dpContext } from '../types'
 export default defineComponent({
   name: 'dp-layout-footer',

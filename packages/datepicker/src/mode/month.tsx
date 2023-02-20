@@ -1,4 +1,4 @@
-import dayjs from 'dayjs/esm'
+import dayjs from 'dayjs'
 import { defineComponent, inject } from 'vue'
 import { dpContext } from '../types'
 export default defineComponent({

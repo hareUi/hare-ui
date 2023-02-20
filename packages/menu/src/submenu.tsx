@@ -30,13 +30,13 @@ export default defineComponent({
       }
     }
     const hasChildSelected = () => {
-      let flag = false
-      nextTick(() => {
-        for (let item of sub.value.children) {
-          flag = item.classList.contains('h-menu-item--selected')
-          if (flag) break
-        }
-      })
+      const flag = false
+      // nextTick(() => {
+      //   for (let item of sub.value.children) {
+      //     flag = item.classList.contains('h-menu-item--selected')
+      //     if (flag) break
+      //   }
+      // })
       return flag
     }
     const sub = ref()

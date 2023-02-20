@@ -9,6 +9,10 @@
     "build": "vitepress build",
     "serve": "vitepress serve"
   },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
   "keywords": [],
   "author": "Zymonody",
   "license": "ISC",

@@ -1,4 +1,4 @@
-import { defineComponent, inject, PropType } from 'vue'
+import { defineComponent, inject } from 'vue'
 import { dpContext } from '../types'
 const props = {
   // mode.value为month和date时使用
