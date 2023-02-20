@@ -1,0 +1,46 @@
+@import './wrapper.scss';
+@import './header.scss';
+@import './content.scss';
+@import './footer.scss';
+@import './right.scss';
+@mixin dpLayout($height) {
+  .h-datepicker__main {
+    background-color: #fff;
+    display: flex;
+    height: $height;
+    @include commonMain($height);
+    &--datetime {
+      @include commonMain($height, 348px);
+    }
+    &--active {
+      height: 244px;
+      box-shadow: $dp-wrapper-border-color-hover 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+    // flex-direction: column;
+  }
+  .h-dp__center {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  @include dpHeader();
+  @include dpContent();
+  @include dpFooter();
+  @include dpRight();
+}
+@mixin commonMain($top, $width: 240px) {
+  border-radius: 5px;
+  position: absolute;
+  top: calc($top + 5px);
+  left: 0;
+  width: $width;
+  overflow-y: auto;
+  height: 0;
+  z-index: $dp-main-z;
+  transition: all $dp-dropdown-transition 0.3s;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

@@ -1,6 +1,5 @@
-import { defineComponent, ref, computed } from 'vue'
+import { defineComponent, ref, computed, StyleValue, ComputedRef } from 'vue'
 import { colProps } from './types'
-
 const NAME = 'h-col'
 
 export default defineComponent({
@@ -9,24 +8,17 @@ export default defineComponent({
   setup(props, { slots }) {
     const width = ref(
       props.span <= 24
-        ? props.span % 1 == 0
+        ? props.span % 1 === 0
           ? (100 / 24) * props.span + '%'
           : ''
         : ''
     )
-    const offset = ref(
-      props.offset <= 24
-        ? props.offset % 1 == 0
-          ? (100 / 24) * props.offset + '%'
-          : ''
-        : ''
-    )
-    const styles = computed(() => {
-      width: '300px'
-    })
+    const colStyles = computed(() => {
+      return { width: width.value }
+    }) as ComputedRef<StyleValue>
     return () => (
-      <div class={NAME} style="backgroundColor:red">
-        1234
+      <div class={NAME} style={colStyles.value}>
+        {slots.default ? slots.default() : null}
       </div>
     )
   }

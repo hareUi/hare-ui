@@ -7,6 +7,9 @@ export default defineConfig({
   optimizeDeps: {
     disabled: true
   },
+  resolve: {
+    alias: {}
+  },
   test: {
     globals: true,
     clearMocks: true,

@@ -1,5 +1,45 @@
 
-@import "../../base/var.module";
+@import "../../base";
 
 .h-table {
+  &__row__header table{
+    margin: 0;
+  }
+  &__row table{
+    margin: 0;
+  }
+  &__row__header__item{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-all;
+    line-height: 23px;
+    padding: 0 12px;
+    text-align: left;
+    width: 200px;
+  }
+  &__row__item{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-all;
+    line-height: 23px;
+    padding: 0 12px;
+    text-align: left;
+    width: 200px;
+  }
+
+}
+.h-table th{
+ border: none;
+}
+.h-table td{
+  border: none;
+}
+.h-table tr{
+  border-bottom: 1px solid $border-level-2-color;
+  border-top: none;
+  &:hover{
+    background-color: $bg-color-container-hover;
+  }
 }
