@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import Datepicker from './datepicker'
 import { mount } from '@vue/test-utils'
 import { getCurrentDaysList } from './dateutils'
