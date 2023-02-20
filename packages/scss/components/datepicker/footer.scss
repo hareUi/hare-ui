@@ -1,0 +1,16 @@
+@mixin dpFooter {
+  .h-dp__footer {
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $dp-wrapper-border-color;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    & > span {
+      cursor: pointer;
+      &:hover {
+        color: $dp-wrapper-border-color-hover;
+      }
+    }
+  }
+}

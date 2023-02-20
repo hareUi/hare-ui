@@ -1,16 +1,121 @@
 @import './var';
-
+@mixin itemTitle() {
+  &__title {
+    color: #8c959e;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    gap: 10px;
+    padding: 0 15px;
+    & > span {
+      margin-right: auto;
+    }
+  }
+  &--selected &__title {
+    color: #fff;
+  }
+}
 .h-menu {
-  list-style: none;
-  flex-wrap: wrap;
+  color: #fff;
+  background: #00152a;
+  width: 208px;
+  // min-height: 100vh;
+  flex-shrink: 0;
+  height: 100%;
   display: flex;
-  box-shadow: $menu-box-shadow;
-  padding-left: 0;
-  gap: $menu-gap;
-  &--horizontal {
-    margin-bottom: 30px;
+  flex-direction: column;
+  &--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: inherit;
+    overflow: hidden;
   }
-  &--vertical{
-    flex-direction: column;
+  &--closed {
+    width: 48px;
+    overflow: hidden;
   }
+  &__head {
+    flex-shrink: 0;
+  }
+  &-head__logo {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    color: #fff;
+    & > img {
+      width: 32px;
+      height: 32px;
+    }
+    & > h1 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-left: 12px;
+      flex-shrink: 0;
+    }
+  }
+  &__main {
+    flex-grow: 1;
+    overflow: hidden auto;
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #51606d;
+      border-radius: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #263849;
+      border-radius: 3px;
+    }
+  }
+  .h-menu--closed &__title {
+    transform: scale(1.5);
+  }
+  .h-menu--closed &__sub {
+    display: none;
+  }
+
+  &__foot {
+    flex-shrink: 0;
+  }
+}
+.h-menu-item {
+  @include itemTitle();
+}
+.h-submenu {
+  &__sub {
+    display: none;
+    animation: sub 0.8s;
+  }
+  @include itemTitle();
+  &--selected &__sub {
+    display: block;
+    &--selected {
+      background-color: #1890ff;
+      color: #fff;
+    }
+    & > li {
+      padding-left: 45px;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  @keyframes sub {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+}
+.h-menu-foot-bar {
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  padding: 15px;
+  cursor: pointer;
 }

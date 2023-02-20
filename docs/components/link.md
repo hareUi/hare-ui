@@ -27,10 +27,10 @@
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |  :---  | :---  | :---  | :---  | :---  |
-| type | 类型 | enum | primary / success / warning / danger | default |
-| underline | 是否下划线 | boolean | true / false | true |
-| disabled | 是否禁用 | boolean | true / false | false |
-| href | 原生 href 属性 | string | | |
+| type | 类型 | `enum` | primary / success / warning / danger | default |
+| underline | 是否下划线 | `boolean` | true / false | true |
+| disabled | 是否禁用 | `boolean` | true / false | false |
+| href | 原生 href 属性 | `string` | | |
 
 
 ### Slots 插槽

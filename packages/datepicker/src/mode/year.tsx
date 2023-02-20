@@ -1,47 +1,45 @@
-import dpTitle from '../common/title'
-import dpRowContent from '../common/row-content'
-import { defineComponent } from 'vue'
-import * as dayjs from 'dayjs'
+import { defineComponent, inject, PropType, Ref } from 'vue'
+import dayjs from 'dayjs'
+import { dpContext } from '../types'
+const props = {
+  data: Object as PropType<Ref<Array<number | string>>>
+}
 export default defineComponent({
   name: 'yearMode',
-  components: { dpTitle, dpRowContent },
-  setup() {
+  props,
+  emits: ['hoverEmit'],
+  setup(props, { emit }) {
+    const { currentYear, dpEmit: fn } = inject('DP_CTX') as dpContext
     return () => {
-      const prevData = []
-      const currentData = []
-      const nextData = []
-      const thisYear = dayjs().year()
-      console.log(thisYear)
-
-      for (let i = 0; i < 10; i++) {
-        if ((thisYear + i) % 10 === 0) {
-          nextData.push(thisYear + i)
-          break
-        }
-        currentData.push(thisYear + i)
+      const pickYear = (item: number) => {
+        fn(item + '')
       }
-      for (let i = 1; i < 10; i++) {
-        if ((thisYear - i + 1) % 10 === 0) {
-          prevData.push(thisYear - i)
-          break
+      const itemClasses = (item: number, index: number) => {
+        const list = ['h-dp-cell']
+        if (index === 0 || index === props.data!.value.length - 1) {
+          list.push('h-dp-cell--grey')
         }
-        currentData.unshift(thisYear - i)
+        if (item === dayjs().year()) {
+          list.push('h-dp-cell--now')
+        }
+        return list
       }
-      console.log(currentData, nextData, prevData)
-
+      const hoverEmit = (item: number) => {
+        emit('hoverEmit', item)
+      }
       return (
-        <div class="hare-datepicker">
-          <dpTitle
-            mode="year"
-            yearRangeStart="2020"
-            yearRangeEnd="2029"
-          ></dpTitle>
-          <dpRowContent
-            mode="year"
-            prevData={prevData}
-            currentData={currentData}
-            nextData={nextData}
-          ></dpRowContent>
+        <div class="h-dp__content-year">
+          {props.data!.value.map((item, index) => {
+            return (
+              <div
+                onMouseover={() => hoverEmit(item as number)}
+                onClick={() => pickYear(item as number)}
+                class={itemClasses(item as number, index)}
+              >
+                {item}
+              </div>
+            )
+          })}
         </div>
       )
     }

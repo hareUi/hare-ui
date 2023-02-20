@@ -101,6 +101,9 @@ export default defineComponent({
         formCtx?.removeItem(formItemCtx)
       }
     })
+    const errMsgStyle = computed(() => {
+      return showErrorMsg.value ? 'opacity:1' : 'opacity:0'
+    })
     return () => (
       <div class={layoutClasses.value}>
         {/* label */}
@@ -108,9 +111,10 @@ export default defineComponent({
         {/* control */}
         {slots.default?.()}
         {/* 错误信息 */}
-        {showErrorMsg.value && (
-          <div class="h-form__item__msg">{errorMsg.value}</div>
-        )}
+
+        <div class="h-form__item__msg" style={errMsgStyle.value}>
+          {errorMsg.value}
+        </div>
       </div>
     )
   }

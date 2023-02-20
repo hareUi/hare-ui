@@ -1,10 +1,12 @@
 <template>
   <div>
     <h-input placeholder="username" prefix-icon="user" type="text"> </h-input>
-    <h-input placeholder="password" prefix-icon="lock" type="password">
-      <template #suffix>
-        <h-icon name="eye-close"></h-icon>
-      </template>
+    <h-input
+      placeholder="password"
+      prefix-icon="lock"
+      type="password"
+      show-password
+    >
     </h-input>
   </div>
 </template>
