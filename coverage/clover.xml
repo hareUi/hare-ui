@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <coverage generated="1675341300143" clover="3.2.0">
   <project timestamp="1675341300143" name="All files">
     <metrics statements="611" coveredstatements="505" conditionals="42" coveredconditionals="32" methods="24" coveredmethods="5" elements="677" coveredelements="542" complexity="0" loc="611" ncloc="611" packages="5" files="12" classes="12"/>
+=======
+<coverage generated="1675527864173" clover="3.2.0">
+  <project timestamp="1675527864173" name="All files">
+    <metrics statements="652" coveredstatements="546" conditionals="42" coveredconditionals="32" methods="24" coveredmethods="5" elements="718" coveredelements="583" complexity="0" loc="652" ncloc="652" packages="6" files="14" classes="14"/>
+>>>>>>> cdca7aa3d5027167313d451fce17754aed29a3df
     <package name="button.src">
       <metrics statements="82" coveredstatements="80" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="0"/>
-      <file name="button.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\button\src\button.tsx">
+      <file name="button.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\button\src\button.tsx">
         <metrics statements="40" coveredstatements="38" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -47,7 +53,7 @@
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
       </file>
-      <file name="types.ts" path="D:\project\bytedance\h-ui\hare-ui\packages\button\src\types.ts">
+      <file name="types.ts" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\button\src\types.ts">
         <metrics statements="42" coveredstatements="42" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -95,7 +101,11 @@
     </package>
     <package name="datepicker.src">
       <metrics statements="114" coveredstatements="103" conditionals="12" coveredconditionals="10" methods="4" coveredmethods="2"/>
+<<<<<<< HEAD
       <file name="datepicker.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\datepicker.tsx">
+=======
+      <file name="datepicker.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\datepicker.tsx">
+>>>>>>> cdca7aa3d5027167313d451fce17754aed29a3df
         <metrics statements="95" coveredstatements="84" conditionals="12" coveredconditionals="10" methods="4" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -193,7 +203,7 @@
         <line num="94" count="1" type="stmt"/>
         <line num="95" count="1" type="stmt"/>
       </file>
-      <file name="types.ts" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\types.ts">
+      <file name="types.ts" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\types.ts">
         <metrics statements="19" coveredstatements="19" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -218,7 +228,11 @@
     </package>
     <package name="datepicker.src.common">
       <metrics statements="190" coveredstatements="147" conditionals="15" coveredconditionals="9" methods="12" coveredmethods="3"/>
+<<<<<<< HEAD
       <file name="row-content.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\common\row-content.tsx">
+=======
+      <file name="row-content.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\common\row-content.tsx">
+>>>>>>> cdca7aa3d5027167313d451fce17754aed29a3df
         <metrics statements="71" coveredstatements="49" conditionals="11" coveredconditionals="7" methods="5" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -292,7 +306,7 @@
         <line num="70" count="1" type="stmt"/>
         <line num="71" count="1" type="stmt"/>
       </file>
-      <file name="row-footer.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\common\row-footer.tsx">
+      <file name="row-footer.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\common\row-footer.tsx">
         <metrics statements="17" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -312,7 +326,11 @@
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="row-title.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\common\row-title.tsx">
+=======
+      <file name="row-title.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\common\row-title.tsx">
+>>>>>>> cdca7aa3d5027167313d451fce17754aed29a3df
         <metrics statements="23" coveredstatements="23" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -338,7 +356,11 @@
         <line num="22" count="21" type="stmt"/>
         <line num="23" count="21" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="title.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\common\title.tsx">
+=======
+      <file name="title.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\common\title.tsx">
+>>>>>>> cdca7aa3d5027167313d451fce17754aed29a3df
         <metrics statements="79" coveredstatements="59" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -423,7 +445,11 @@
     </package>
     <package name="datepicker.src.mode">
       <metrics statements="209" coveredstatements="167" conditionals="12" coveredconditionals="10" methods="6" coveredmethods="0"/>
+<<<<<<< HEAD
       <file name="date.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\mode\date.tsx">
+=======
+      <file name="date.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\mode\date.tsx">
+>>>>>>> cdca7aa3d5027167313d451fce17754aed29a3df
         <metrics statements="151" coveredstatements="109" conditionals="12" coveredconditionals="10" methods="6" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -577,7 +603,7 @@
         <line num="150" count="1" type="stmt"/>
         <line num="151" count="1" type="stmt"/>
       </file>
-      <file name="week.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\mode\week.tsx">
+      <file name="week.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\mode\week.tsx">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -589,7 +615,11 @@
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
       </file>
+<<<<<<< HEAD
       <file name="year.tsx" path="D:\project\bytedance\h-ui\hare-ui\packages\datepicker\src\mode\year.tsx">
+=======
+      <file name="year.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\datepicker\src\mode\year.tsx">
+>>>>>>> cdca7aa3d5027167313d451fce17754aed29a3df
         <metrics statements="49" coveredstatements="49" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -640,11 +670,64 @@
         <line num="47" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
         <line num="49" count="1" type="stmt"/>
+<<<<<<< HEAD
+=======
+      </file>
+    </package>
+    <package name="empty.src">
+      <metrics statements="41" coveredstatements="41" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="empty.tsx" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\empty\src\empty.tsx">
+        <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+      </file>
+      <file name="types.ts" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\empty\src\types.ts">
+        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+>>>>>>> cdca7aa3d5027167313d451fce17754aed29a3df
       </file>
     </package>
     <package name="utils.src">
       <metrics statements="16" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="call.ts" path="D:\project\bytedance\h-ui\hare-ui\packages\utils\src\call.ts">
+      <file name="call.ts" path="C:\Users\eunic\Desktop\hare\hare-ui\packages\utils\src\call.ts">
         <metrics statements="16" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>

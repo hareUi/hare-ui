@@ -1,4 +1,4 @@
-import { defineComponent, inject, PropType, ref, Ref } from 'vue'
+import { defineComponent, inject, PropType, Ref } from 'vue'
 import dateMode from '../mode/date'
 import yearMode from '../mode/year'
 import monthMode from '../mode/month'
@@ -21,7 +21,9 @@ export default defineComponent({
       emit('hoverEmit', args)
     }
     const renderMode = () => {
-      if (!props.data) return
+      console.log(mode.value)
+
+      // if (!props.data) return
       switch (mode.value) {
         case 'date':
         case 'datetime':
@@ -32,18 +34,18 @@ export default defineComponent({
               data={props.data}
             ></dateMode>
           )
-        case 'month':
-          return (
-            <monthMode
-              onHoverEmit={(args: string) => hoverEmit(args)}
-            ></monthMode>
-          )
         case 'year':
           return (
             <yearMode
               onHoverEmit={(args: string) => hoverEmit(args)}
               data={props.data[0]}
             ></yearMode>
+          )
+        case 'month':
+          return (
+            <monthMode
+              onHoverEmit={(args: string) => hoverEmit(args)}
+            ></monthMode>
           )
         case 'week':
           return <weekMode></weekMode>

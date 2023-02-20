@@ -1,5 +1,5 @@
 import dayjs from 'dayjs/esm'
-import { defineComponent, computed, inject } from 'vue'
+import { defineComponent, inject } from 'vue'
 import { dpContext } from '../types'
 export default defineComponent({
   name: 'monthMode',
@@ -30,7 +30,6 @@ export default defineComponent({
           {new Array(12).fill(0).map((item, index) => {
             return (
               <div
-                // onHover={() => hoverEmit(index)}
                 onMouseover={() => hoverEmit(index)}
                 onClick={() => pickMonth(index)}
                 class={itemClasses(index)}

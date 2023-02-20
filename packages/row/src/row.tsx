@@ -15,14 +15,13 @@ const NAME = 'h-row'
 export default defineComponent({
   name: NAME,
   props: rowProps,
+  components: { hCol },
   setup(props, { slots }) {
     const renderSlots = () => {
       const slotsList = [] as Array<VNode>
       slots.default &&
         slots.default().forEach((item, index) => {
-          // if (item.type === 'h-col') {
           slotsList.push(item)
-          // }
         })
       return slotsList
     }

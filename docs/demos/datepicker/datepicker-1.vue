@@ -6,8 +6,6 @@
     <h-datepicker mode="year"></h-datepicker>
     月份选择器
     <h-datepicker mode="month"></h-datepicker>
-    周选择器
-    <h-datepicker mode="week"></h-datepicker>
     datetime
     <h-datepicker mode="datetime"></h-datepicker>
   </div>

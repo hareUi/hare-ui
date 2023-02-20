@@ -16,13 +16,13 @@ import {
   getCurrentMonth,
   getPrevDaysList,
   getCurrentDaysList,
-  getNextDaysList
+  getNextDaysList,
+  genTenYearsList
 } from './dateutils'
 import dpHeader from './layout/header'
 import dpContent from './layout/content'
 import dpFooter from './layout/footer'
 import dpRight from './layout/right'
-import { genTenYearsList } from './dateutils'
 const NAME = 'h-datepicker'
 
 export default defineComponent({
@@ -215,7 +215,7 @@ export default defineComponent({
     //     inputValue.value += e.data
     //   }
     // }
-    // 格式对了留下来，不对直接清空,bug版
+    // 格式对了留下来，不对直接清空
     const dateValid = () => {
       // console.log(inputValue)
       if (dayjs(inputValue.value).isValid()) {
@@ -247,6 +247,8 @@ export default defineComponent({
               onDoublePrev={doublePrev}
               onDoubleNext={doubleNext}
               onSecondhandYear={toYearMode}
+              yearRangeStart={tenYearsList.value[0]}
+              yearRangeEnd={tenYearsList.value[0] + 11}
             ></dpHeader>
             <dpContent
               onHoverEmit={(args: string) => setPlaceholderValue(args)}

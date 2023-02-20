@@ -59,7 +59,7 @@ export default defineComponent({
       } else if (mode.value === 'year') {
         return (
           <div>
-            <span class="h-dp__header-btn">{props.yearRangeStart}</span>
+            <span class="h-dp__header-btn">{props.yearRangeStart} - </span>
             <span class="h-dp__header-btn">{props.yearRangeEnd}</span>
           </div>
         )

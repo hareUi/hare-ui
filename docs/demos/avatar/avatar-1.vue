@@ -8,7 +8,7 @@
 </template>
 
 <style>
-.avatar-demo-1 .devui-avatar {
+.avatar-demo-1 .h-avatar {
   margin-right: 10px;
 }
 </style>

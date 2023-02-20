@@ -8,9 +8,11 @@
 
 ### Attributes 属性
 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-| ---- | ---- | ---- | ------ | ------ |
-|      |      |      |        |        |
+| 参数   | 说明                 | 类型   | 可选值                                             | 默认值 |
+| ------ | -------------------- | ------ | -------------------------------------------------- | ------ |
+| size   | 设置datepicker的大小 | string | 'sm'\|'md'\|'lg'                                   | 'md'   |
+| mode   | 设置datepicker类型   | string | 'date'\| 'year' \| 'month' \| 'week' \| 'datetime' | 'date' |
+| format | 设置类型格式         | string | 与dayjs的format可选类型相同                        |        |
 
 ### Methods 方法
 

@@ -1,32 +1,30 @@
 
 @import "../../base/var.module";
-@import './private/animation';
-@import './private/color';
-@import './private/corner';
-@import './private/font';
-@import './private/shadow';
-@import './private/z-index';
+@import '../../base/private/animation';
+@import '../../base/private/color';
+@import '../../base/private/corner';
+@import '../../base/private/font';
+@import '../../base/private/shadow';
+@import '../../base/private/z-index';
 
 
-$devui-prefix: devui;
-.#{$devui-prefix}-avatar {
+$h-prefix: 'h';
+.#{$h-prefix}-avatar {
   display: inline-block;
 }
 
-.#{$devui-prefix}-avatar__style {
+.#{$h-prefix}-avatar__style {
   display: inline-block;
   text-align: center;
   color:#fff1e9;
 }
 
-.#{$devui-prefix}-avatar--background-0 {
+.#{$h-prefix}-avatar--background-0 {
   background-color: #ff8b87;
 }
 
-.#{$devui-prefix}-avatar--background-1 {
-  background-color: #7693f5;
+.#{$h-prefix}-avatar--background-1 {
+  background-color: #344899;
 }
 
-.h-avatar {
 
-}

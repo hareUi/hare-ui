@@ -1,0 +1,24 @@
+// Font 字体
+
+$h-font-size: var(--h-font-size, 14px); //正文、卡片副标题
+$h-font-size-card-title: var(--h-font-size-card-title, 16px); //卡片标题
+$h-font-size-page-title: var(--h-font-size-page-title, 16px); //页面标题
+$h-font-size-message: var(--h-font-size-page-title, 16px); //页面标题
+$h-font-size-modal-title: var(--h-font-size-modal-title, 18px); //弹窗标题、数字
+$h-font-size-price: var(--h-font-size-price, 20px); //购买价格
+$h-font-size-data-overview: var(--h-font-size-data-overview, 24px); //数据总览
+
+$h-font-size-h1-title: var(--h-font-size-h1-title, 28px);
+$h-font-size-h2-title: var(--h-font-size-h2-title, 24px);
+$h-font-size-h3-title: var(--h-font-size-h3-title, 20px);
+$h-font-size-h4-title: var(--h-font-size-h4-title, 18px);
+$h-font-size-h5-title: var(--h-font-size-h5-title, 16px);
+
+$h-font-size-icon: var(--h-font-size-icon, 16px); //图标大小
+$h-font-size-sm: var(--h-font-size-sm, 12px); //当组件size为'sm'时使用此字号大小
+$h-font-size-md: var(--h-font-size-md, 14px); //当组件size为''时使用此字号大小
+$h-font-size-lg: var(--h-font-size-lg, 14px); //当组件size为'lg'时使用此字号大小
+
+$h-font-title-weight: var(--h-font-title-weight, bold); //标题文字粗细
+$h-font-content-weight: var(--h-font-content-weight, normal); //内容文字粗细
+$h-line-height-base: var(--h-line-height-base, 1.5); //规范行高

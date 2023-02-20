@@ -1,6 +1,11 @@
 <template>
   <div>
-    <h-menu mode="vertical" :logo="logo" :defaultIndex="'a'">
+    <h-menu
+      style="height: 100vh"
+      mode="vertical"
+      :logo="logo"
+      :defaultIndex="'a'"
+    >
       <h-menu-item index="a" icon="vue">Dashboard</h-menu-item>
       <h-menu-item index="b" icon="user">用户管理</h-menu-item>
       <!-- <h-menu-item index="c"></h-menu-item> -->

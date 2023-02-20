@@ -11,8 +11,12 @@ import Switch from '@hare-ui/switch'
 import Alert from '@hare-ui/alert'
 import Datepicker from '@hare-ui/datepicker'
 import Avatar from '@hare-ui/avatar'
+import Empty from '@hare-ui/empty'
+import Card from '@hare-ui/card'
+import Progress from '@hare-ui/progress'
 import Row from '@hare-ui/row'
 import Col from '@hare-ui/col'
+import Drawer from '@hare-ui/drawer'
 // import component end
 import '../scss/index.scss'
 
@@ -30,6 +34,10 @@ const components = [
   SubMenu,
   Datepicker,
   Avatar,
+  Empty,
+  Card,
+  Progress,
+  Drawer,
   Row,
   Col
 ] // components

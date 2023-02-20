@@ -1,0 +1,187 @@
+// 基础色值
+
+// 取色规则1： 所有使用颜色均需要在色板中选择
+// 取色规则2： 除标签等用于功能分类及black,white的取色可以增加透明度(eg: rgba($h-white-5,0.3)，其余场景均不允许
+
+$h-blue-5: #f2f5fc;
+$h-blue-10: #e9edfa;
+$h-blue-20: #beccfa;
+$h-blue-30: #96adfa;
+$h-blue-40: #7693f5;
+$h-blue-50: #5e7ce0;
+$h-blue-60: #526ecc;
+$h-blue-70: #465eb8;
+$h-blue-80: #3c51a6;
+$h-blue-90: #344899;
+$h-blue-100: #2a3c85;
+
+$h-sky-5: #ebf6ff;
+$h-sky-10: #d1ebff;
+$h-sky-20: #b8e0ff;
+$h-sky-30: #9ed5ff;
+$h-sky-40: #85caff;
+$h-sky-50: #6cbfff;
+$h-sky-60: #4ea6e6;
+$h-sky-70: #3590cc;
+$h-sky-80: #207ab3;
+$h-sky-90: #0f6999;
+$h-sky-100: #035880;
+
+$h-green-5: #edfff9;
+$h-green-10: #cffcee;
+$h-green-20: #acf2dc;
+$h-green-30: #8be8cb;
+$h-green-40: #6ddebb;
+$h-green-50: #50d4ab;
+$h-green-60: #3ac295;
+$h-green-70: #27b080;
+$h-green-80: #169e6c;
+$h-green-90: #088c58;
+$h-green-100: #007a45;
+
+$h-lime-5: #f0ffe6;
+$h-lime-10: #e5ffd4;
+$h-lime-20: #d8fcc0;
+$h-lime-30: #c5f2a7;
+$h-lime-40: #b3e890;
+$h-lime-50: #a6dd82;
+$h-lime-60: #92cc68;
+$h-lime-70: #7eba50;
+$h-lime-80: #6ca83b;
+$h-lime-90: #5e9629;
+$h-lime-100: #518519;
+
+$h-yellow-5: #fffbf0;
+$h-yellow-10: #fff1c2;
+$h-yellow-20: #ffe794;
+$h-yellow-30: #ffdc66;
+$h-yellow-40: #ffd138;
+$h-yellow-50: #fac20a;
+$h-yellow-60: #e3aa00;
+$h-yellow-70: #cc9600;
+$h-yellow-80: #b58200;
+$h-yellow-90: #9e6f00;
+$h-yellow-100: #875c00;
+
+$h-orange-5: #fff3e8;
+$h-orange-10: #ffe1c7;
+$h-orange-20: #ffd0a6;
+$h-orange-30: #ffbf85;
+$h-orange-40: #ffad63;
+$h-orange-50: #fa9841;
+$h-orange-60: #e37d29;
+$h-orange-70: #cc6414;
+$h-orange-80: #b54e04;
+$h-orange-90: #9e3f00;
+$h-orange-100: #873400;
+
+$h-red-5: #ffeeed;
+$h-red-10: #ffd5d4;
+$h-red-20: #ffbcba;
+$h-red-30: #ffa4a1;
+$h-red-40: #ff8b87;
+$h-red-50: #f66f6a;
+$h-red-60: #de504e;
+$h-red-70: #c73636;
+$h-red-80: #b02121;
+$h-red-90: #991111;
+$h-red-100: #820404;
+
+$h-magenta-5: #ffedf3;
+$h-magenta-10: #ffd4e3;
+$h-magenta-20: #ffbad2;
+$h-magenta-30: #ffa1c2;
+$h-magenta-40: #fc86b0;
+$h-magenta-50: #f3689a;
+$h-magenta-60: #db4d83;
+$h-magenta-70: #c4356e;
+$h-magenta-80: #ad215b;
+$h-magenta-90: #96114d;
+$h-magenta-100: #800440;
+
+$h-purple-5: #f5f0ff;
+$h-purple-10: #e7d9ff;
+$h-purple-20: #d8c2ff;
+$h-purple-30: #caabff;
+$h-purple-40: #bc94ff;
+$h-purple-50: #a97af8;
+$h-purple-60: #8a5ce0;
+$h-purple-70: #6f42c9;
+$h-purple-80: #572db3;
+$h-purple-90: #3f1a9c;
+$h-purple-100: #2a0c85;
+
+$h-gray-5: #f5f5f5;
+$h-gray-10: #ebebeb;
+$h-gray-20: #e0e0e0;
+$h-gray-30:  #d1d1d1;
+$h-gray-40: #bdbdbd;
+$h-gray-50: #8a8a8a;
+$h-gray-60: #878787;
+$h-gray-70: #707070;
+$h-gray-80: #5c5c5c;
+$h-gray-90: #474747;
+$h-gray-100: #383838;
+
+$h-slate-5: #f7f8fa;
+$h-slate-10: #eef0f5;
+$h-slate-20: #dfe1e6;
+$h-slate-30: #d7d8da;
+$h-slate-40: #cfd0d3;
+$h-slate-50: #babbc0;
+$h-slate-60: #9b9fa8;
+$h-slate-70: #71757f;
+$h-slate-80: #575d6c;
+$h-slate-90: #323745;
+$h-slate-100: #252b3a;
+
+$h-zinc-5: #f8f8fa;
+$h-zinc-10: #f2f2f3;
+$h-zinc-20: #e2e2e6;
+$h-zinc-30: #d5d5db;
+$h-zinc-40: #c7c7d1;
+$h-zinc-50: #aeaebd;
+$h-zinc-60: #9696a3;
+$h-zinc-70: #7a7a85;
+$h-zinc-80: #63636b;
+$h-zinc-90: #494952;
+$h-zinc-100: #37373d;
+
+$h-dark-gray-5: #16181a;
+$h-dark-gray-10: #202124;
+$h-dark-gray-20: #292a2e;
+$h-dark-gray-30: #2e2f33;
+$h-dark-gray-40: #323338;
+$h-dark-gray-50: #393a3e;
+$h-dark-gray-60: #4e5057;
+$h-dark-gray-70: #696c75;
+$h-dark-gray-80: #868a99;
+$h-dark-gray-90: #acb0bd;
+$h-dark-gray-100: #ced1db;
+
+$h-dark-slate-5: #0e111a;
+$h-dark-slate-10: #141721;
+$h-dark-slate-20: #1a1e29;
+$h-dark-slate-30: #232633;
+$h-dark-slate-40: #2c303e;
+$h-dark-slate-50: #33384b;
+$h-dark-slate-60: #444b61;
+$h-dark-slate-70: #626a85;
+$h-dark-slate-80: #878ea8;
+$h-dark-slate-90: #a3aac2;
+$h-dark-slate-100: #c1c7db;
+
+$h-dark-zinc-5: #1a1a1c;
+$h-dark-zinc-10: #212124;
+$h-dark-zinc-20: #28282b;
+$h-dark-zinc-30: #2f2f33;
+$h-dark-zinc-40: #353537;
+$h-dark-zinc-50: #3d3d42;
+$h-dark-zinc-60: #4b4b52;
+$h-dark-zinc-70: #575861;
+$h-dark-zinc-80: #767680;
+$h-dark-zinc-90: #9898a3;
+$h-dark-zinc-100: #b7b7c7;
+
+$h-white-5: #ffffff;
+$h-black-5: #000000;

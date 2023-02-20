@@ -1,0 +1,86 @@
+
+@import "../../base/var.module";
+@import '../../base/private/animation';
+@import '../../base/private/color';
+@import '../../base/private/corner';
+@import '../../base/private/font';
+@import '../../base/private/shadow';
+@import '../../base/private/z-index';
+
+$h-prefix: h;
+.#{$h-prefix}-progress__content {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .#{$h-prefix}-progress__line {
+    width: 100%;
+    position: relative;
+    background: $h-dividing-line;
+
+    .#{$h-prefix}-progress__bar {
+      width: 0;
+      height: 100%;
+      transition: width 0.6s ease;
+      background-color: #5e7ce0;
+
+      > span {
+        display: block;
+        white-space: nowrap;
+        color: $h-light-text;
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 0 10px;
+      }
+    }
+
+    > span {
+      display: block;
+      white-space: nowrap;
+      color: $h-light-text;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .inside {
+      text-align: center;
+    }
+
+    .insideLeft {
+      text-align: left;
+    }
+
+    .insideRight {
+      text-align: right;
+    }
+  }
+
+  > span {
+    min-width: 46px;
+    padding: 0 5px;
+    text-align: center;
+  }
+}
+
+.#{$h-prefix}-progress__circle {
+  position: relative;
+
+  .#{$h-prefix}-progress__circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: $h-text;
+    line-height: 1;
+    white-space: normal;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -26,7 +26,7 @@ export default defineComponent({
             !props.modelValue ? 'h-switch__label--color' : ''
           ]}
         >
-          {props.activeText}
+          {props.inactiveText}
         </span>
         <span
           class="h-switch__core"
@@ -48,7 +48,7 @@ export default defineComponent({
             props.modelValue ? 'h-switch__label--color' : ''
           ]}
         >
-          {props.inactiveText}
+          {props.activeText}
         </span>
         <input
           type="checkbox"

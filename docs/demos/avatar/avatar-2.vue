@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
 }
-.avatar-demo-2 .devui-avatar {
+.avatar-demo-2 .h-avatar {
   margin-right: 10px;
 }
 </style>

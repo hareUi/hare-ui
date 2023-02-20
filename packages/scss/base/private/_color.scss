@@ -1,0 +1,114 @@
+// Color 颜色
+
+@import 'basic';
+
+// 基础变量
+$h-global-bg: var(--h-global-bg, $h-zinc-5); // 全局带底色背景
+$h-global-bg-normal: var(--h-global-bg-normal, $h-white-5); // 全局白色背景
+$h-base-bg: var(--h-base-bg, $h-white-5); // 基础区块背景白色
+$h-base-bg-dark: var(--h-base-bg-dark, $h-slate-100); // 基础区块背景深色(固定)
+$h-brand: var(--h-brand, $h-blue-50); // 品牌色
+$h-brand-foil: var(--h-brand-foil, $h-zinc-10); // 品牌色辅助色、正衬色
+$h-brand-hover: var(--h-brand-hover, $h-blue-40); // 品牌色高亮色（加亮）
+$h-brand-active: var(--h-brand-active, $h-blue-60); // 品牌色激活色（加深）
+$h-brand-active-focus: var(--h-brand-active-focus, $h-blue-90); // 品牌色焦点色（重度加深）
+$h-contrast: var(--h-contrast, #c7000b); // 品牌色撞色、对比色、反衬色、第二品牌色
+$h-text: var(--h-text, $h-slate-100); // 正文文本
+$h-text-weak: var(--h-text-weak, $h-slate-80); // 弱化的正文信息（手风琴子项，表头）
+$h-aide-text: var(--h-aide-text, $h-slate-70); // 辅助文本、帮助信息（面包屑）
+$h-aide-text-hover: var(--h-aide-text-hover, $h-slate-100);       // 辅助文本悬浮色，用于标签文本悬浮等场景
+$h-aide-text-stress: var(--h-aide-text-stress, $h-slate-80); // 辅助文本、帮助信息里的强调色
+$h-placeholder: var(--h-placeholder, $h-slate-50); // 占位符
+$h-light-text: var(--h-light-text, $h-white-5); // 有色深色背景下字体颜色（固定）
+$h-dark-text: var(--h-dark-text, $h-slate-100); // 有色浅色背景下字体颜色（固定）
+$h-link: var(--h-link, $h-blue-60); // 链接文本颜色
+$h-link-active: var(--h-link-active, $h-blue-60); // 链接文本悬停/激活颜色
+$h-link-light: var(--h-link-light, $h-blue-30); // 深色背景下链接文本颜色
+$h-link-light-active: var(--h-link-light-active, $h-blue-20); // 深色背景下链接文本悬停/激活颜色
+$h-line: var(--h-line, $h-slate-30); // 边框分割线，仅用于边框
+$h-dividing-line: var(--h-dividing-line, $h-zinc-10); // 内容分割线，用于内容之间的分割
+$h-block: var(--h-block, $h-white-5); // 大面积的不可折叠区块的背景色（例如顶部导航背景色）
+$h-area: var(--h-area, #f8f8f8); // 可折叠区块的背景色（展开区域颜色）
+$h-danger: var(--h-danger, $h-red-50); // 失败、错误、告警
+$h-warning: var(--h-warning, $h-yellow-50); // 警告、需注意类型提示
+$h-waiting: var(--h-waiting, #9faad7); // 等待中
+$h-success: var(--h-success, $h-green-50); // 成功、正确
+$h-info: var(--h-info, $h-blue-50); // 通知、一般提示、执行中
+$h-initial: var(--h-initial, $h-blue-10); // 初始化、未执行
+$h-unavailable: var(--h-unavailable, $h-gray-5); // 不可用、禁用状态
+$h-shadow: var(--h-shadow, rgba(37, 43, 58, 0.2)); // 阴影色
+$h-light-shadow: var(--h-light-shadow, rgba(37, 43, 58, 0.1)); // 弱化阴影色
+$h-connected-overlay-shadow: var(--h-connected-overlay-shadow, rgba(37, 43, 58, 0.12)); // 下拉菜单类阴影色
+$h-feedback-overlay-shadow: var(--h-feedback-overlay-shadow, rgba(37, 43, 58, 0.16)); // 信息展示类阴影色
+
+// 图标
+$h-icon-text: var(--h-icon-text, $h-slate-70); // 文字图标颜色
+$h-icon-bg: var(--h-icon-bg, $h-white-5); // svg图标 背景色
+$h-icon-fill: var(--h-icon-fill, $h-slate-70); // svg图标 灰色填充色
+$h-icon-fill-weak:var(--h-icon-fill-weak, $h-slate-50);// svg弱化图标 灰色填充色
+$h-icon-fill-hover: var(--h-icon-fill-hover, $h-slate-100); // svg图标 灰色填充色悬停反馈色
+$h-icon-fill-active: var(--h-icon-fill-active, $h-slate-100); // svg图标 高亮填充色（激活状态）
+$h-icon-fill-active-hover: var(--h-icon-fill-active-hover, $h-slate-100); // svg图标 高亮填充色悬停反馈色
+$h-shape-icon-fill: var(--h-shape-icon-fill, $h-slate-30);   // svg图标 面型图标颜色
+$h-shape-icon-fill-hover: var(--h-shape-icon-fill-hover, $h-slate-50); // svg图标 面型图标悬浮色
+$h-shape-icon-fill-active: var(--h-shape-icon-fill-active, $h-slate-50); // svg图标 面型图标激活色
+$h-shape-icon-fill-disabled: var(--h-shape-icon-fill-disabled, $h-gray-5); // svg图标 面型图标激活色
+// 表单
+$h-form-control-line: var(--h-form-control-line, $h-slate-30); // 表单控件边框色，同 边框分割线
+$h-form-control-bg: var(--h-form-control-bg, $h-white-5); // 表单控件背景色
+$h-form-control-line-hover: var(--h-form-control-line-hover, #575d6c); // 表单控件边框悬停反馈色
+$h-form-control-line-active: var(--h-form-control-line-active, $h-blue-50); // 表单控件边框激活色，用于获得焦点
+$h-form-control-line-active-hover: var(--h-form-control-line-active-hover, $h-blue-90); // 表单控件边框激活色，用于获得焦点且悬停
+// 列表
+$h-list-item-active-bg: var(--h-list-item-active-bg, $h-blue-5); // 列表类型单选选中背景
+$h-list-item-active-text: var(--h-list-item-active-text, $h-slate-100); // 列表类型单选选中背景搭配文本，同 有色深色背景下字体颜色（固定）
+$h-list-item-active-hover-bg: var(--h-list-item-active-hover-bg, $h-blue-5); // 列表类型单选选中背景悬停反馈色（仅用于分页等）
+$h-list-item-hover-bg: var(--h-list-item-hover-bg, $h-zinc-10); // 列表类型普通选项悬停背景
+$h-list-item-hover-text: var(--h-list-item-hover-text, $h-slate-100); // 列表类型普通选项悬停背景搭配文本
+$h-list-item-selected-bg: var(--h-list-item-selected-bg, $h-blue-5); // 列表类型多选被选中的行色，仅用于表格类
+$h-list-item-strip-bg: var(--h-list-item-strip-bg, $h-blue-5); // 列表类型斑马纹色，仅用于表格类
+// 禁用
+$h-disabled-bg: var(--h-disabled-bg, $h-gray-5); // disabled背景颜色
+$h-disabled-line: var(--h-disabled-line, $h-slate-20); // disabled边框颜色
+$h-disabled-text: var(--h-disabled-text, #adb0b8); // disabled文字颜色
+$h-primary-disabled: var(--h-primary-disabled, $h-blue-20); //主要按钮disabled状态文字颜色
+$h-icon-fill-active-disabled: var(--h-icon-fill-active-disabled, $h-blue-20); // svg图标激活状态禁用色
+// 特殊背景色
+$h-label-bg: var(--h-label-bg, $h-blue-10); // 默认标签化选项背景色
+$h-connected-overlay-bg: var(--h-connected-overlay-bg, $h-white-5); // 有连接点的弹出菜单层背景色
+$h-connected-overlay-line: var(--h-connected-overlay-line, $h-blue-60); // 有连接点的弹出菜单层边框色
+$h-fullscreen-overlay-bg: var(--h-fullscreen-overlay-bg, $h-white-5); // 全屏类型的弹出内容层背景色（模态弹窗）
+$h-feedback-overlay-bg: var(--h-feedback-overlay-bg, #464d6e); // 信息提示反馈类型的漂浮层背景色（toast、popover）
+$h-feedback-overlay-text: var(--h-feedback-overlay-text, $h-slate-20); // 信息提示反馈类型的漂浮层背景色搭配文本色
+$h-embed-search-bg: var(--h-embed-search-bg, $h-zinc-10); // 被嵌套的无边框搜索框背景色
+$h-embed-search-bg-hover: var(--h-embed-search-bg-hover, $h-slate-10); // 被嵌套的无边框搜索框背景色
+$h-float-block-shadow: var(--h-float-block-shadow, rgba(94, 124, 224, 0.3)); // 特殊浮层背景色（待修正）
+$h-highlight-overlay: var(--h-highlight-overlay, rgba(255, 255, 255, 0.8)); // 局部半透明全局浮层背景色（比如底部）
+$h-range-item-hover-bg: var(--h-range-item-hover-bg, $h-blue-10); // datepicker范围中的日期hover的反馈背景色
+
+// 按钮
+$h-primary: var(--h-primary, $h-blue-50); // 主要按钮，同品牌色
+$h-primary-hover: var(--h-primary-hover, $h-blue-40); // 主要按钮悬停
+$h-primary-active: var(--h-primary-active, $h-blue-90); // 主要按钮激活
+
+$h-contrast-hover: var(--h-contrast-hover, #d64a52); // 突出按钮悬停
+$h-contrast-active: var(--h-contrast-active, #b12220); // 突出按钮激活
+$h-contrast-disabled: var(--h-contrast-disabled, #ffbcba); // 突出按钮禁用
+
+// 状态
+$h-danger-line: var(--h-danger-line, $h-red-50); // 失败边框
+$h-danger-bg: var(--h-danger-bg, $h-red-5); // 失败底色
+
+$h-warning-line: var(--h-warning-line, $h-orange-50); // 警告边框
+$h-warning-bg: var(--h-warning-bg, $h-orange-5); // 警告底色
+
+$h-info-line: var(--h-info-line, $h-blue-50); // 通知边框
+$h-info-bg: var(--h-info-bg, $h-blue-5); // 通知底色
+
+$h-success-line: var(--h-success-line, $h-green-50); // 成功边框
+$h-success-bg: var(--h-success-bg, $h-green-5); // 成功底色
+$h-primary-line: var(--h-primary-line, $h-blue-50); // 主要边框
+$h-primary-bg: var(--h-primary-bg, $h-blue-5); // 主要底色
+
+$h-default-line: var(--h-default-line, $h-blue-50); // 默认边框
+$h-default-bg: var(--h-default-bg, $h-slate-5); // 默认底色
