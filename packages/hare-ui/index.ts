@@ -15,9 +15,7 @@ import Avatar from '@hare-ui/avatar'
 import Empty from '@hare-ui/empty'
 import Card from '@hare-ui/card'
 import Progress from '@hare-ui/progress'
-import Drawer from '@hare-ui/drawer'
 import Message from '@hare-ui/message'
-
 import Link from '@hare-ui/link'
 import Table from '@hare-ui/table'
 import BackToTop from '@hare-ui/back-to-top'
@@ -41,7 +39,6 @@ const components = [
   Empty,
   Card,
   Progress,
-  Drawer,
   Message,
   Link,
   Table,
