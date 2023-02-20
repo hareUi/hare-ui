@@ -1,7 +1,7 @@
 import { defineComponent, reactive } from 'vue'
 
 const props = {
-  data: Array<Object> || undefined
+  data: Array<Object>
 }
 export default defineComponent({
   name: 'tb-row',

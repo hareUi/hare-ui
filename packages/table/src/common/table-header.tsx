@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 
 const props = {
-  title: Array<Object> || undefined
+  title: Array<Object>
 }
 export default defineComponent({
   name: 'tb-header',
