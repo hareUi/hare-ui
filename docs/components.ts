@@ -17,5 +17,13 @@ export const components = [
   { text: 'Empty 空状态', link: '/components/empty' },
   { text: 'Card 卡片', link: '/components/card' },
   { text: 'Progress 进度展示', link: '/components/progress' },
-  { text: 'Drawer 抽屉', link: '/components/drawer' }
+  { text: 'Drawer 抽屉', link: '/components/drawer' },
+  { text: 'Empty 空状态', link: '/components/empty' },
+  { text: 'Card 卡片', link: '/components/card' },
+  { text: 'Progress 进度展示', link: '/components/progress' },
+  { text: 'Message 消息', link: '/components/message' },
+  { text: 'Link 链接', link: '/components/link' },
+  { text: 'Table 表格', link: '/components/table' },
+  { text: 'Breadcrumb 面包屑', link: '/components/breadcrumb' },
+  { text: 'BackToTop 回到顶部', link: '/components/back-to-top' }
 ] // end

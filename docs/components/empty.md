@@ -24,13 +24,7 @@
 
 | 参数 | 说明 | 类型 | 可选值 | 默认值 |
 |  ----  | ----  | ----  | ----  | ----  |
-|  imgage  | 图片地址  | string  |  |  |
-|  imageSize | 图片宽度 | number |  | 200 |
-|  description | 文字描述 | string |  | do not have data here |
+|  imgage  | 图片地址  | string  |- |  |
+|  imageSize | 图片宽度 | number | - | 200 |
+|  description | 文字描述 | string |-  | do not have data here |
 
-
-### Slots 插槽
-
-| 插槽名 | 说明 | 参数 |
-|  ----  | ----  | ----  |
-|  |  |  |

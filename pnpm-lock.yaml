@@ -23,6 +23,7 @@ importers:
       commitizen: ^4.3.0
       conventional-changelog-cli: ^2.2.2
       cz-conventional-changelog-zh: ^0.0.2
+      dayjs: ^1.11.7
       eslint: ^8.32.0
       eslint-config-standard: ^17.0.0
       eslint-plugin-import: ^2.25.2
@@ -44,6 +45,7 @@ importers:
     dependencies:
       '@vueuse/core': 9.12.0_vue@3.2.45
       async-validator: 4.2.5
+      dayjs: 1.11.7
       vue: 3.2.45
     devDependencies:
       '@commitlint/cli': 17.4.2
@@ -145,6 +147,18 @@ importers:
     dependencies:
       '@hare-ui/utils': link:../utils
 
+  packages/back-to-top:
+    specifiers:
+      '@hare-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@hare-ui/utils': link:../utils
+
+  packages/breadcrumb:
+    specifiers:
+      '@hare-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@hare-ui/utils': link:../utils
+
   packages/button:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
@@ -166,18 +180,14 @@ importers:
   packages/datepicker:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
-      dayjs: ^1.11.7
     dependencies:
       '@hare-ui/utils': link:../utils
-      dayjs: 1.11.7
 
-  packages/drawer:
+  packages/divider:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
-      '@vueuse/core': ^9.12.0
     dependencies:
       '@hare-ui/utils': link:../utils
-      '@vueuse/core': 9.12.0
 
   packages/empty:
     specifiers:
@@ -207,45 +217,49 @@ importers:
     specifiers:
       '@hare-ui/alert': workspace:^1.0.0
       '@hare-ui/avatar': workspace:^1.0.0
+      '@hare-ui/back-to-top': workspace:^1.0.0
       '@hare-ui/button': workspace:^1.0.0
       '@hare-ui/card': workspace:^1.0.0
       '@hare-ui/col': workspace:^1.0.0
       '@hare-ui/datepicker': workspace:^1.0.0
-      '@hare-ui/drawer': workspace:^1.0.0
       '@hare-ui/empty': workspace:^1.0.0
       '@hare-ui/foo': workspace:^1.0.0
       '@hare-ui/form': workspace:^1.0.0
       '@hare-ui/form-item': workspace:^1.0.0
       '@hare-ui/icon': workspace:^1.0.0
       '@hare-ui/input': workspace:^1.0.0
+      '@hare-ui/link': workspace:^1.0.0
       '@hare-ui/menu': workspace:^1.0.0
-      '@hare-ui/menu-item': workspace:^1.0.0
+      '@hare-ui/message': workspace:^1.0.0
       '@hare-ui/progress': workspace:^1.0.0
       '@hare-ui/row': workspace:^1.0.0
       '@hare-ui/sub-menu': workspace:^1.0.0
       '@hare-ui/switch': workspace:^1.0.0
+      '@hare-ui/table': workspace:^1.0.0
       rimraf: ^4.1.0
       vite-plugin-dts: ^1.7.1
     dependencies:
       '@hare-ui/alert': link:../alert
       '@hare-ui/avatar': link:../avatar
+      '@hare-ui/back-to-top': link:../back-to-top
       '@hare-ui/button': link:../button
       '@hare-ui/card': link:../card
       '@hare-ui/col': link:../col
       '@hare-ui/datepicker': link:../datepicker
-      '@hare-ui/drawer': link:../drawer
       '@hare-ui/empty': link:../empty
       '@hare-ui/foo': link:../foo
       '@hare-ui/form': link:../form
       '@hare-ui/form-item': link:../form-item
       '@hare-ui/icon': link:../icon
       '@hare-ui/input': link:../input
+      '@hare-ui/link': link:../link
       '@hare-ui/menu': link:../menu
-      '@hare-ui/menu-item': link:../menu-item
+      '@hare-ui/message': link:../message
       '@hare-ui/progress': link:../progress
       '@hare-ui/row': link:../row
       '@hare-ui/sub-menu': link:../sub-menu
       '@hare-ui/switch': link:../switch
+      '@hare-ui/table': link:../table
     devDependencies:
       rimraf: 4.1.0
       vite-plugin-dts: 1.7.1
@@ -262,13 +276,19 @@ importers:
     dependencies:
       '@hare-ui/utils': link:../utils
 
+  packages/link:
+    specifiers:
+      '@hare-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@hare-ui/utils': link:../utils
+
   packages/menu:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
     dependencies:
       '@hare-ui/utils': link:../utils
 
-  packages/menu-item:
+  packages/message:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
     dependencies:
@@ -293,6 +313,12 @@ importers:
       '@hare-ui/utils': link:../utils
 
   packages/switch:
+    specifiers:
+      '@hare-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@hare-ui/utils': link:../utils
+
+  packages/table:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
     dependencies:
@@ -2300,18 +2326,6 @@ packages:
       - '@vue/composition-api'
       - vue
 
-  /@vueuse/core/9.12.0:
-    resolution: {integrity: sha512-h/Di8Bvf6xRcvS/PvUVheiMYYz3U0tH3X25YxONSaAUBa841ayMwxkuzx/DGUMCW/wHWzD8tRy2zYmOC36r4sg==}
-    dependencies:
-      '@types/web-bluetooth': 0.0.16
-      '@vueuse/metadata': 9.12.0
-      '@vueuse/shared': 9.12.0
-      vue-demi: 0.13.11
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
-
   /@vueuse/core/9.12.0_vue@3.2.45:
     resolution: {integrity: sha512-h/Di8Bvf6xRcvS/PvUVheiMYYz3U0tH3X25YxONSaAUBa841ayMwxkuzx/DGUMCW/wHWzD8tRy2zYmOC36r4sg==}
     dependencies:
@@ -2338,15 +2352,6 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
-
-  /@vueuse/shared/9.12.0:
-    resolution: {integrity: sha512-TWuJLACQ0BVithVTRbex4Wf1a1VaRuSpVeyEd4vMUWl54PzlE0ciFUshKCXnlLuD0lxIaLK4Ypj3NXYzZh4+SQ==}
-    dependencies:
-      vue-demi: 0.13.11
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-    dev: false
 
   /@vueuse/shared/9.12.0_vue@3.2.45:
     resolution: {integrity: sha512-TWuJLACQ0BVithVTRbex4Wf1a1VaRuSpVeyEd4vMUWl54PzlE0ciFUshKCXnlLuD0lxIaLK4Ypj3NXYzZh4+SQ==}
@@ -7677,19 +7682,6 @@ packages:
 
   /vscode-textmate/6.0.0:
     resolution: {integrity: sha512-gu73tuZfJgu+mvCSy4UZwd2JXykjK9zAZsfmDeut5dx/1a7FeTk0XwJsSuqQn+cuMCGVbIBfl+s53X4T19DnzQ==}
-
-  /vue-demi/0.13.11:
-    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
-    engines: {node: '>=12'}
-    hasBin: true
-    requiresBuild: true
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^3.0.0-0 || ^2.6.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-    dev: false
 
   /vue-demi/0.13.11_vue@3.2.45:
     resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}

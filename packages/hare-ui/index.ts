@@ -16,7 +16,10 @@ import Card from '@hare-ui/card'
 import Progress from '@hare-ui/progress'
 import Row from '@hare-ui/row'
 import Col from '@hare-ui/col'
-import Drawer from '@hare-ui/drawer'
+import Message from '@hare-ui/message'
+import Link from '@hare-ui/link'
+import Table from '@hare-ui/table'
+import BackToTop from '@hare-ui/back-to-top'
 // import component end
 import '../scss/index.scss'
 
@@ -37,9 +40,12 @@ const components = [
   Empty,
   Card,
   Progress,
-  Drawer,
   Row,
-  Col
+  Col,
+  Message,
+  Link,
+  Table,
+  BackToTop
 ] // components
 
 // 全局动态添加组件
@@ -48,6 +54,8 @@ const install = (app: App): void => {
     app.component(component.name, component)
   })
 }
+
+export { Message }
 
 export default {
   install

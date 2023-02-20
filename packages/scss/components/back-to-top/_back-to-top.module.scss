@@ -1,0 +1,17 @@
+
+@import "../../base/var.module";
+
+.h-back-to-top {
+    position: fixed;
+    img{
+        height: 50px;
+        border-radius: 50px;
+        transition: all 0.5s;/*持续时间*/
+    }
+    img:hover{
+        border-radius: 50px; border-radius: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 50px;
+        transition: all 0.5s;/*持续时间*/
+    }
+}
