@@ -153,12 +153,6 @@ importers:
     dependencies:
       '@hare-ui/utils': link:../utils
 
-  packages/breadcrumb:
-    specifiers:
-      '@hare-ui/utils': workspace:^1.0.0
-    dependencies:
-      '@hare-ui/utils': link:../utils
-
   packages/button:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
@@ -178,12 +172,6 @@ importers:
       '@hare-ui/utils': link:../utils
 
   packages/datepicker:
-    specifiers:
-      '@hare-ui/utils': workspace:^1.0.0
-    dependencies:
-      '@hare-ui/utils': link:../utils
-
-  packages/divider:
     specifiers:
       '@hare-ui/utils': workspace:^1.0.0
     dependencies:
