@@ -6,7 +6,7 @@
 
 使用`npm`全局安装组件库
 ```bash
-npm install --registry http://150.158.88.84:4873/
+npm install hare-ui --registry http://150.158.88.84:4873/
 ```
 
 ## 使用
@@ -14,6 +14,7 @@ npm install --registry http://150.158.88.84:4873/
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
-import HareUI from '@hare-ui/hare-ui'
+import HareUI from 'hare-ui'
+import 'hare-ui/lib/style.css'
 createApp(App).use(HareUI).mount('#app')
 ```
