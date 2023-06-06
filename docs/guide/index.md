@@ -10,6 +10,7 @@ Hare-UI Vue3 企业级中后台组件库
 
 - 团队：
   - [八阶齐次线性方程组](https://github.com/hareUi)
+
 - 成员：
   - [cooper](https://github.com/Cooyper)
   - [hotaru1227](https://github.com/hotaru1227)
