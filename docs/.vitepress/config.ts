@@ -7,7 +7,7 @@ import { components } from '../components'
 
 const nav: DefaultTheme.NavItem[] = [
   { text: '指南', link: '/guide/' },
-  { text: '组件', link: '/components/foo' }
+  { text: '组件', link: '/components/button' }
 ]
 
 const sidebar: DefaultTheme.Sidebar = {
