@@ -20,4 +20,4 @@ jobs:
       - name: 打包部署文件
         run: pnpm run docs:build
       - name: 向服务器上传文件
-        run: scp -r -i ${{ secrets.SERVER_KEY }} ${{ github.workspace }}/docs/.vitepress/dist ${{ SERVER_USERNAME }@${{ SERVER_HOST }}:/www/wwwroot/hareui.snowhouse.space
+        run: scp -r -i ${{ secrets.SERVER_KEY }} ${{ github.workspace }}/docs/.vitepress/dist ${{ SERVER_USERNAME }}@${{ SERVER_HOST }}:/www/wwwroot/hareui.snowhouse.space
