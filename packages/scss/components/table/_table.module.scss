@@ -1,44 +1,48 @@
-@import "../../base";
+@import '../../base';
 
 .h-table {
-  &__row__header table{
-    margin: 0 !important;
-  }
-  &__row table{
-    margin: 0 !important;
-  }
-  &__row__header__item{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    word-break: break-all;
-    line-height: 23px;
-    padding: 0 12px;
-    text-align: left;
-    width: 200px;
-  }
-  &__row__item{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    word-break: break-all;
-    line-height: 23px;
-    padding: 0 12px;
-    text-align: left;
-    width: 200px;
-  }
+  height: 800px;
+  overflow-y: auto;
 
+  &__row__header table {
+    margin: 0 !important;
+  }
+  &__row table {
+    overflow: hidden;
+    margin: 0 !important;
+  }
+  &__row__header__item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-all;
+    line-height: 23px;
+    padding: 0 12px;
+    text-align: left;
+    width: 200px;
+  }
+  &__row__item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-all;
+    line-height: 23px;
+    padding: 0 12px;
+    text-align: left;
+    width: 200px;
+  }
 }
-.h-table th{
- border: none !important;
-}
-.h-table td{
+.h-table th {
   border: none !important;
 }
-.h-table tr{
+.h-table td {
+  border: none !important;
+}
+.h-table tbody tr {
+  height: 100px;
   border-bottom: 1px solid $border-level-2-color;
   border-top: none !important;
-  &:hover{
+  &:hover {
     background-color: $bg-color-container-hover;
   }
 }
