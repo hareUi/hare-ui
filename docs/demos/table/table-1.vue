@@ -14,12 +14,10 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 // 这里使用了 mock 生成的数据
-import {
-  normalTableData,
-  bigTableData
-} from '../../../packages/utils/src/mock-data'
+import { normalTableData, bigTableData } from '@packages/utils/src/mock-data'
 
 const tableData = ref(normalTableData.list)
+
 const columns = ref([
   { title: 'Date', dataIndex: 'date' },
   { title: 'Name', dataIndex: 'name' },

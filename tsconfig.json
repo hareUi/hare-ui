@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "declaration": true, /* 生成相关的 '.d.ts' 文件。 */
-    "declarationDir": "./dist/types", /* '.d.ts' 文件输出目录 */
+    "declaration": true /* 生成相关的 '.d.ts' 文件。 */,
+    "declarationDir": "./dist/types" /* '.d.ts' 文件输出目录 */,
     "jsx": "preserve",
-    "allowSyntheticDefaultImports":true,
-    "esModuleInterop": true
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": "./", // 用于设置解析非相对模块名称的基本目录，相对模块不会受到baseUrl的影响
+    "paths": {
+      // 用于设置模块名到基于baseUrl的路径映射
+      "@packages/*": ["packages/*"]
+    }
   },
-  "include": [
-    "./**/*.*",
-    "./hare-vue.d.ts",
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["./**/*.*", "./hare-vue.d.ts"],
+  "exclude": ["node_modules"],
   "esModuleInterop": true,
   "allowSyntheticDefaultImports": true,
   "noImplicitAny": false
