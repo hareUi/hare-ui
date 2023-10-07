@@ -27,13 +27,11 @@ export default defineComponent({
           <table>
             <tbody>
               <tr style={trStyle.value}>
-                {rowItems.value.map((item, index) => {
-                  return (
-                    <td class="h-table__row__item" key={`item${index}`}>
-                      {item}
-                    </td>
-                  )
-                })}
+                {rowItems.value.map((item, index) => (
+                  <td class="h-table__row__item" key={`item${index}`}>
+                    {item}
+                  </td>
+                ))}
               </tr>
             </tbody>
           </table>

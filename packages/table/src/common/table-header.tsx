@@ -12,16 +12,14 @@ export default defineComponent({
         <table>
           <thead>
             <tr>
-              {props.title.map((item, index) => {
-                return (
-                  <th
-                    class="h-table__row__header__item"
-                    key={`table-header-${index}`}
-                  >
-                    {item}
-                  </th>
-                )
-              })}
+              {props.title.map((item, index) => (
+                <th
+                  class="h-table__row__header__item"
+                  key={`table-header-${index}`}
+                >
+                  {item}
+                </th>
+              ))}
             </tr>
           </thead>
         </table>

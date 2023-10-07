@@ -39,17 +39,12 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      cHeight.value = document.querySelector('.h-table').clientHeight
+      cHeight.value = tableRef.value.clientHeight
       volume.value = Math.ceil(cHeight.value / itemHeight)
-      tableRef.value.addEventListener('scroll', scrollHandle)
-    })
-
-    onUnmounted(() => {
-      tableRef.value.removeEventListener('scroll', scrollHandle)
     })
 
     return () => (
-      <div class={NAME} ref={tableRef}>
+      <div class={NAME} ref={tableRef} onScroll={scrollHandle}>
         <tbRowHeader title={headerTitles.value}></tbRowHeader>
         {/* 上部分滚动留空区域 */}
         <div
@@ -58,15 +53,13 @@ export default defineComponent({
           }}
         ></div>
         <div>
-          {renderData.value.map((item, i) => {
-            return (
-              <tbRow
-                data={tableColumnKeys.value.map(key => item[key])}
-                itemHeight={itemHeight}
-                key={item.key || `table-row-${i}`}
-              ></tbRow>
-            )
-          })}
+          {renderData.value.map((item, i) => (
+            <tbRow
+              data={tableColumnKeys.value.map(key => item[key])}
+              itemHeight={itemHeight}
+              key={item.key || `table-row-${i}`}
+            ></tbRow>
+          ))}
         </div>
         {/* 下部分滚动留空区域 */}
         <div
