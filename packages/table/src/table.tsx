@@ -11,7 +11,7 @@ export default defineComponent({
   components: { tbRowHeader, tbRow },
   setup(props) {
     const headerTitles = computed(() => props.columns.map(item => item.title))
-    const tableColumns = computed(() =>
+    const tableColumnKeys = computed(() =>
       props.columns.map(item => item.dataIndex)
     )
     const tableData = computed(() => props.data)
@@ -61,9 +61,9 @@ export default defineComponent({
           {renderData.value.map((item, i) => {
             return (
               <tbRow
-                data={tableColumns.value.map(key => item[key])}
+                data={tableColumnKeys.value.map(key => item[key])}
                 itemHeight={itemHeight}
-                key={item.key || `table-item-${i}`}
+                key={item.key || `table-row-${i}`}
               ></tbRow>
             )
           })}
