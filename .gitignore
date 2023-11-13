@@ -6,7 +6,6 @@ lib
 dist-ssr
 *.local
 coverage
-docs/.vitepress/dist
 
 .vscode/*
 coverage/*
