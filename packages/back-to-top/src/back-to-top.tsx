@@ -7,22 +7,7 @@ export default defineComponent({
   name: NAME,
   props: backToTopProps,
   setup(props, { slots }) {
-    // 获取页面偏移量
-
-    //  let a=document.getElementById('myBack')
-    let scrolly = window.pageYOffset
-    let a = computed(() => {
-      console.log(document.body.scrollTop)
-      if (scrolly > props.visiableHeight) {
-        console.log('a')
-        // a.style.display = 'absolute'
-      } else {
-        console.log('b')
-        // a.style.display = 'none'
-      }
-    })
     const TestClick = () => {
-      console.log('aaaa')
       document.body.scrollTop = document.documentElement.scrollTop = 0
     }
 

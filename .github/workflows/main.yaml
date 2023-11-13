@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [snowman]
+    branches: [test]
   pull_request:
-    branches: [main]
+    branches: [test]
 jobs:
   UnitTest:
     # The type of runner that the job will run on

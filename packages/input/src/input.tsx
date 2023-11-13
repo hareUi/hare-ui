@@ -90,8 +90,6 @@ export default defineComponent({
     const isShowPwd = ref(false)
     const currentType = ref(props.type)
     const handleIsShowPwd = () => {
-      console.log(isShowPwd.value)
-
       currentType.value =
         currentType.value === 'password' ? props.type : 'password'
       isShowPwd.value = !isShowPwd.value

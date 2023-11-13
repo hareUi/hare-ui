@@ -1,53 +1,50 @@
 # hare-ui
 
-## 官方文档
-使用方式请前往官方文档查看：http://hareui.snowhouse.space/
+官方文档：[HareUi](https://hareui.snowhouse.space/)
 
-## 项目指令
+## 📕简介
 
-### 安装依赖
+- hare-ui是第五届字节跳动寒假青训营，前端进阶班大作业组件库项目，最终排名第八夺得超级码力奖。
+- 实现20+种组件，拥有完善的组件库文档和使用示例，搭配统一规范的代码风格与测试。
 
-> pnpm install
+## 🧑团队成员
 
-### 运行组件文档(docs目录)
+- [LonelySnowman](https://github.com/LonelySnowman)
+- [cooper](https://github.com/Cooyper)
+- [hotaru1227](https://github.com/hotaru1227)
+- [XiaoCdeGitHub](https://github.com/XiaoCdeGitHub)
+- [wxk1234567](https://github.com/wxk1234567)
+- [Happy_Cat](https://github.com/starabcf)
+- [haozhuqian](https://github.com/haozhuqian)
+- [Zymonody7](https://github.com/Zymonody7)
 
-> pnpm run docs:dev
+## 🚀项目指令
 
-### 运行测试网站(example目录)
+### 基本指令
 
-> pnpm run dev:dev
+- 启动前请先安装依赖`pnpm install`
 
-### 新建组件(cli目录)
+```bash
+# 启动demo项目
+pnpm run dev:dev
 
-> pnpm run gen:component
->
-> Q1:组件名称
->
-> Q2:组件描述(中文名称)
->
-> Q3:选用模板(选.tsx)
+# 启动文档
+pnpm run docs:dev
 
-### 查看覆盖率
-> pnpm run coverage
+# 组件库打包
+pnpm run build:lib
 
-### 提交
-> pnpm run commit
+# 文档打包
+pnpm run docs:build
+```
 
-## 项目规范
+### 新建组件
 
-### 使用BEM规范编写
-- 写scss使用变量,之后可以切换白天/黑暗模式。
-- 写scss`伪类`或者`子类`时,前面加`&`可以简写很多代码,结合bem规范,写起来就会很清晰。如下，结构清晰，层次分明。
-```scss
-.article {
-    max-width: 1200px;
-    &__body {
-        padding: 20px;
-    }
-    &__button {
-        padding: 5px 8px;
-        &--primary {background: blue;}
-        &--success {background: green;}
-    }
-}
+- 通过命令行交互快速生成组件模板
+
+```bash
+pnpm run gen:component
+# Q1:组件名称
+# Q2:组件描述(中文名称)
+# Q3:选用模板(选.tsx)
 ```
